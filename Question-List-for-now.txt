@@ -1,0 +1,1066 @@
+GENERAL BUT IMPORTANT:
+-------------------
+	What are your accomplishment in you current project?
+	What is the most difficult production issue you fixed?
+	What design implementation satisfied you most ?
+	How do you interact with client to avoid escalation?
+		Always up to-date on offshore and on-site status
+		Be transparent to client
+		Bringing in prior notice of any slippage or bottle-neck issues
+	Agil vs Waterfall:
+		http://www.onedesk.com/2013/01/waterfall-vs-agile/
+		http://www.sdlc.ws/agile-vs-waterfall/
+	Scrum:
+		http://en.wikipedia.org/wiki/Scrum_(development)
+		
+
+-------------------
+CORE JAVA: PLEASE REFER AT THE END BEFORE "IF TIME PERMITS:"
+-------------------
+
+new -- http://www.novixys.com/blog/
+
+ARCHITECTURE:
+-------------------
+	UML
+		What is composition?
+			http://stackoverflow.com/questions/1644273/what-is-the-difference-between-aggregation-composition-and-dependency
+		What are the relation types used in class diagram?
+			http://idiotechie.com/uml2-class-diagram-in-java/
+	What do you understand by SOA?	
+		http://searchsoa.techtarget.com/definition/service-oriented-architecture
+		http://en.wikipedia.org/wiki/Service-oriented_architecture	
+        https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list		
+	Architecture diagrams:
+			http://java-success.blogspot.com.au/2011/10/java-interview-questions-and-answers-on.html		
+	Design patterns:
+		How do you implement Singleton?
+			http://javarevisited.blogspot.sg/2011/03/10-interview-questions-on-singleton.html
+		http://stackoverflow.com/questions/10175805/how-to-avoid-a-lot-of-if-else-conditions
+		http://javarevisited.blogspot.com/2011/12/factory-design-pattern-java-example.html
+		
+		http://javarevisited.blogspot.ro/2012/06/builder-design-pattern-in-java-example.html
+		http://yongouyang.blogspot.com/2013/04/a-different-builder-pattern-example-in.html
+		
+		http://javarevisited.blogspot.com/2011/11/decorator-design-pattern-java-example.html
+		
+		http://javarevisited.blogspot.com/2011/12/observer-design-pattern-java-example.html
+		http://www.journaldev.com/1739/observer-design-pattern-in-java-example-tutorial
+		http://www.programcreek.com/2011/01/an-java-example-of-observer-pattern/
+		https://dzone.com/articles/the-observer-pattern-using-modern-java?edition=132257&utm_source=Daily%20Digest&utm_medium=email&utm_content=DZone%20Daily%20Digest&utm_campaign=dd%202016-01-12&userid=764511
+		
+		http://javarevisited.blogspot.com/2012/02/producer-consumer-design-pattern-with.html
+		http://www.tutorialspoint.com/design_pattern/index.htm
+		
+		http://javapapers.com/category/design-patterns/
+		
+		Diff between Factory & Builder Pattern
+		http://stackoverflow.com/questions/757743/what-is-the-difference-between-builder-design-pattern-and-factory-design-pattern
+		
+		Java/JDK example of design pattern
+		http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries
+		
+		Observer pattern
+	    **********	
+
+		**********
+		https://dzone.com/articles/java-design-pattern-simplified-part-1-of-django-se
+		
+		added 2017
+		https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
+		https://dzone.com/articles/design-patterns-decorator
+		
+		
+		
+-------------------
+Web Service:
+	http://java-success.blogspot.com.au/2012/02/java-web-services-interview-questions.html
+
+	http://rest.elkstein.org/
+	http://net.tutsplus.com/tutorials/other/a-beginners-introduction-to-http-and-rest/
+	http://www.mkyong.com/tutorials/jax-rs-tutorials/
+	http://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+	http://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+	http://en.wikipedia.org/wiki/Web_Services_Description_Language
+	http://briansjavablog.blogspot.com/2012/08/rest-services-with-spring.html
+	What is the advantage of RESTful webservice over SOAP?
+		http://javapapers.com/web-service/rest-vs-soap/
+		REST: 1. Limited bandwidth and resources	2. Totally stateless operations	3. Caching situations	4. HTTP/HTTPS
+		SOAP: 1. Asynchronous processing and invocation		2. Formal contracts		3. Stateful operations	4. HTTP/HTTPS, SMTP, JMS, or other   protocols
+	Where do you use RESTful web service?
+		http://geeknizer.com/rest-vs-soap-using-http-choosing-the-right-webservice-protocol/
+	For RESTful web service when do you use POST or PUT?
+		POST to create new entity and PUT to update existing entity because PUT is idempotent and POST is not
+	Which are safe methods in RESTful web service?
+		GET
+	Which are idempotent methods in RESTful web service?
+		GET, PUT, DELETE
+	http://java.dzone.com/articles/securing-restful-web-service
+	
+
+-------------------
+SPRING:
+-------------------
+	http://www.mkyong.com/tutorials/spring-tutorials/
+	http://www.tutorialspoint.com/spring/index.htm
+	http://javarevisited.blogspot.sg/2011/09/spring-interview-questions-answers-j2ee.html
+	MVC:http://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm
+	Security:
+		http://javarevisited.blogspot.com/2012/03/spring-security-example-tutorial-how-to.html
+		http://www.mkyong.com/tutorials/spring-security-tutorials/   arro dekhte hobe...
+		
+		spring-security.xml
+				<http auto-config="true">
+					<intercept-url pattern="/admin**" access="ROLE_USER" />
+				</http>
+
+				<authentication-manager>
+				  <authentication-provider>
+					<user-service>
+					<user name="mkyong" password="123456" authorities="ROLE_USER" />
+					</user-service>
+				  </authentication-provider>
+				</authentication-manager>
+		</beans:beans>
+		
+		web.xml
+		
+					<!-- Loads Spring Security config file -->
+				<context-param>
+					<param-name>contextConfigLocation</param-name>
+					<param-value>
+						/WEB-INF/spring-security.xml
+					</param-value>
+				</context-param>
+
+				<!-- Spring Security -->
+				<filter>
+					<filter-name>springSecurityFilterChain</filter-name>
+					<filter-class>org.springframework.web.filter.DelegatingFilterProxy
+					</filter-class>
+				</filter>
+
+				<filter-mapping>
+					<filter-name>springSecurityFilterChain</filter-name>
+					<url-pattern>/*</url-pattern>
+				</filter-mapping>
+				
+	Transaction:
+		http://www.atomikos.com/Documentation/SpringIntegration  arro dekhte hobe...
+	Isolation:
+		http://en.wikipedia.org/wiki/Isolation_(database_systems)  arro dekhte hobe...
+	How to implement transaction in Spring
+		http://www.tutorialspoint.com/spring/spring_transaction_management.htm
+		http://www.mkyong.com/spring/spring-aop-transaction-management-in-hibernate/
+	How Spring implements dependency injection	
+		http://www.vogella.com/articles/SpringDependencyInjection/
+		http://www.vogella.com/tutorials/DependencyInjection/article.html
+		
+	How Spring implements Singleton
+		http://stackoverflow.com/questions/2637864/singleton-design-pattern-vs-singleton-beans-in-spring-container
+		
+		
+		Added in 2017***** for singleton bean uses another non-singleton(prototype bean)
+		http://docs.spring.io/spring/docs/2.5.x/reference/beans.html#beans-factory-method-injection
+		
+		Added in 2017*****bean with private constructor*****
+		http://stackoverflow.com/questions/7254496/java-spring-bean-with-private-constructor/7254617#7254617
+		
+		
+	How Spring implements dynamic proxy pattern
+		http://stackoverflow.com/questions/8224465/spring-use-of-proxies-in-spring-aop
+		http://stackoverflow.com/questions/2227836/what-is-the-meaning-of-using-proxy-dynamic-proxy-in-spring-framework	
+		http://docs.spring.io/spring/docs/2.5.x/reference/aop.html#aop-proxying
+		http://spring.io/blog/2007/07/19/debunking-myths-proxies-impact-performance/
+		
+	Which transaction types throws exceptions?
+		Mandatory throws exception when it is tried to run with no transaction and
+		Never throws exception when it is tried to run with transaction
+		 
+		Added in 2017*****
+		There are 7 types of propagation supported by Spring :
+
+		PROPAGATION_REQUIRED – Support a current transaction; create a new one if none exists.
+		PROPAGATION_SUPPORTS – Support a current transaction; execute non-transactionally if none exists.
+		PROPAGATION_MANDATORY – Support a current transaction; throw an exception if no current transaction exists.
+		PROPAGATION_REQUIRES_NEW – Create a new transaction, suspending the current transaction if one exists.
+		PROPAGATION_NOT_SUPPORTED – Do not support a current transaction; rather always execute non-transactionally.
+		PROPAGATION_NEVER – Do not support a current transaction; throw an exception if a current transaction exists.
+		PROPAGATION_NESTED – Execute within a nested transaction if a current transaction exists, behave like PROPAGATION_REQUIRED else.
+		In most cases, you may just need to use the PROPAGATION_REQUIRED.
+		
+		TransactionDefinition.ISOLATION_DEFAULT --This is the default isolation level.
+        TransactionDefinition.ISOLATION_READ_COMMITTED --Indicates that dirty reads are prevented; non-repeatable reads and phantom reads can occur.
+        TransactionDefinition.ISOLATION_READ_UNCOMMITTED--Indicates that dirty reads, non-repeatable reads, and phantom reads can occur.	
+		TransactionDefinition.ISOLATION_REPEATABLE_READ--Indicates that dirty reads and non-repeatable reads are prevented; phantom reads can occur.
+		TransactionDefinition.ISOLATION_SERIALIZABLE--Indicates that dirty reads, non-repeatable reads, and phantom reads are prevented.
+		https://dzone.com/articles/spring-transaction-management?edition=154256&utm_source=Daily%20Digest&utm_medium=email&utm_content=DZone%20Daily%20Digest&utm_campaign=dd%202016-03-20&userid=764511
+		
+	Two Phase commit	
+		http://docs.oracle.com/cd/B28359_01/server.111/b28310/ds_txns003.htm
+		http://www.atomikos.com/Documentation/TwoPhaseCommitWithTomcatSpringJMSAndJDBC
+	What happens when JVM crashes in a two phase commit
+		http://docs.oracle.com/cd/E26576_01/doc.312/e24928/transactions.htm		arro dekhte hobe..
+		
+		
+		http://java-success.blogspot.com.au/2012/10/jdbc-tutorial-with-hsqldb.html
+		http://java-success.blogspot.com.au/2013/02/spring-jdbc-template-examples-calling.html
+		http://java-success.blogspot.com.au/2013/12/spring-simplejdbccall-to-invoke-stored.html
+		*******
+		http://examples.javacodegeeks.com/enterprise-java/spring/jdbc/spring-jdbctemplate-example/
+		
+
+		spring-get-current-applicationcontext
+		http://forum.spring.io/forum/spring-projects/container/97063-spring-web-application-context-gets-initialized-twice
+		http://stackoverflow.com/questions/21827548/spring-get-current-applicationcontext
+		spring application context object with in non spring managed classes 
+		http://www.java2novice.com/spring/application-context-objecjk
+-------------------
+MYBATIS:
+-------------------
+	http://stackoverflow.com/questions/1984548/hibernate-vs-ibatis
+	http://loianegroner.com/2011/02/introduction-to-ibatis-mybatis-an-alternative-to-hibernate-and-jdbc/
+
+-------------------
+HIBERNATE:
+-------------------
+	http://javarevisited.blogspot.com/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html
+	http://www.java4s.com/hibernate/main-advantage-and-disadvantages-of-hibernates/
+	http://www.dzone.com/tutorials/java/spring/spring-hibernate-integration-1.html
+	http://www.mkyong.com/hibernate/different-between-cascade-and-inverse/
+	http://www.mkyong.com/hibernate/hibernate-cascade-example-save-update-delete-and-delete-orphan/
+	Hibernate Configuration
+	Sorted and ordered collection
+	Cache Hibernate Query
+		http://www.tutorialspoint.com/hibernate/hibernate_caching.htm
+	Types of fetch mechanism in Hibernate
+		http://www.mkyong.com/hibernate/hibernate-fetching-strategies-examples/
+		
+		1. fetch-“join” = Disable the lazy loading, always load all the collections and entities.
+		2. fetch-“select” (default) = Lazy load all the collections and entities.
+		3. batch-size=”N” = Fetching up to ‘N’ collections or entities, *Not record*.
+		4. fetch-“subselect” = Group its collection into a sub select statement.
+
+	Want to merge parent but no change in child needs to be merged
+		http://www.mkyong.com/hibernate/inverse-true-example-and-explanation/
+		http://docs.jboss.org/hibernate/orm/3.3/reference/en-US/html/example-parentchild.html
+		http://stackoverflow.com/questions/8113301/what-is-the-purpose-of-session-lock-method-in-hibernate
+		http://stackoverflow.com/questions/161224/what-are-the-differences-between-the-different-saving-methods-in-hibernate
+	Hibernate: Optimistic lock and Pessimistic lock
+		http://docs.jboss.org/hibernate/stable/orm/devguide/en-US/html/ch05.html
+		http://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
+	Hibernate:merge-update
+		http://www.stevideter.com/2008/12/07/saveorupdate-versus-merge-in-hibernate/  TO DO : LINK NOT working...find new one...
+	Hibernate: key	
+		http://stackoverflow.com/questions/10041938/how-to-choose-the-id-generation-strategy-when-using-hibernate
+	How to implement cache
+		http://ehcache.org/documentation/apis/transactions		
+	Full documentation on object state: 
+	http://docs.jboss.org/hibernate/core/3.6/reference/en-US/html/objectstate.html
+	
+Added in 2017	
+	http://www.mkyong.com/jpa/jpa-optimistic-lock-exception-in-java-development/
+	
+	
+	http://www.mkyong.com/java/how-to-read-and-parse-csv-file-in-java/
+	
+Spring Batch : 
+    
+	 http://www.mkyong.com/tutorials/spring-batch-tutorial/
+	 http://www.mkyong.com/spring-batch/spring-batch-hello-world-example/
+	 http://www.mkyong.com/spring-batch/spring-batch-partitioning-example/
+	 http://www.mkyong.com/spring-batch/spring-batch-listeners-example/
+	 http://www.mkyong.com/spring-batch/spring-batch-multiresourceitemreader-example/
+	 
+
+-------------------
+DATABASE:
+-------------------		
+	Normalization
+	Advantage/Disadvantage of Index
+		http://www.asktheoracle.net/what-are-the-disadvantages-of-indexes-in-oracle.html
+		http://publib.boulder.ibm.com/infocenter/db2luw/v8/index.jsp?topic=/com.ibm.db2.udb.doc/admin/c0005052.htm
+	Inner Join/Outer Join
+		http://en.wikipedia.org/wiki/Join_(SQL)
+	Cartessian Join or Cross Join
+		http://www.tutorialspoint.com/sql/sql-cartesian-joins.htm	
+	N-th highest salary
+		http://www.programmerinterview.com/index.php/database-sql/find-nth-highest-salary-sql/
+	Exception thrown without try/catch or throw	
+		http://robaustin.wikidot.com/rethrow-exceptions	
+	Have you done data modeling?
+		Conceptual Data Model, Logical Data Model, Physical Data Model
+	How do you tune a query in database?
+		http://www.dba-oracle.com/art_sql_tune.htm	
+		
+			http://www.oracle.com/technetwork/issue-archive/2013/13-mar/o23plsql-1906474.html
+http://orabase.blogspot.com/2007/01/cursors-vs-ref-cursors.html
+
+keys : primary, foreign, surrogate and composite 
+  http://www.java67.com/2012/10/difference-between-primary-vs-unique-key-table-sql.html
+  http://www.agiledata.org/essays/keys.html
+		normalizaiton
+		constraint : Unique
+		Join : 
+		http://en.wikipedia.org/wiki/Join_%28SQL%29
+		http://www.java67.com/2014/09/difference-between-union-vs-union-all-in-SQL.html
+		
+		 1> cartesian or cross join .: join with out where clause.
+		 2> Inner join :
+		  Inner join creates a new result table by combining column values of two tables (A and B) based upon the join-predicate. The query compares each row of A with each row of B to find all pairs of rows which satisfy the join-predicate. When the join-predicate is satisfied, column values for each matched pair of rows of A and B are combined into a result row.
+
+         http://stackoverflow.com/questions/3362038/what-is-self-join-and-when-would-you-use-it
+		 
+		 3> Outer Join : Full outer join : A, B all data and a and b individual data
+		 4>left outer join
+		 5> right outer join
+		 6> Nested sub query
+		 7> corelated sub query :
+		  a correlated subquery (also known as a synchronized subquery) is a subquery (a query nested inside another query) that uses values from the outer query. The subquery is evaluated once for each row processed by the outer query.
+		   SELECT employee_number, name
+			   FROM employees AS Bob
+			   WHERE salary > (
+				 SELECT AVG(salary)
+				   FROM employees
+				   WHERE department = Bob.department);
+		  http://en.wikipedia.org/wiki/Correlated_subquery
+		  
+         8> View is compiled query in db : is the select query , join in multiple tble. does not hold data
+         9> Mat view is snapshot of seltive data of multiple table	
+         10> Cursor  and ref cursor,
+		 Given that block of code -- you see perhaps the most "salient" difference -- no matter 
+how many times you run that block -- cursor C will always be select * from dual.  The ref 
+cursor can be anything.
+
+Another difference is a ref cursor can be returned to a client.  a plsql "cursor cursor" 
+cannot be returned to a client.
+
+Another difference is a cursor can be global -- a ref cursor cannot (you cannot define 
+them OUTSIDE of a procedure / function)
+
+Another difference is a ref cursor can be passed from subroutine to subroutine -- a 
+cursor cannot be.
+
+Another difference is that static sql (not using a ref cursor) is much more efficient 
+then using ref cursors and that use of ref cursors should be limited to
+- returning result sets to clients
+- when there is NO other efficient/effective means of achieving the goal
+		 
+		 http://www.oracle.com/technetwork/issue-archive/2013/13-mar/o23plsql-1906474.html
+		 http://asktom.oracle.com/pls/asktom/f?p=100:11:0::::P11_QUESTION_ID:14188501024541
+		 		 http://www.tutorialspoint.com/plsql/plsql_cursors.htm
+		 
+         11> Function and procedure  : 
+		 http://stackoverflow.com/questions/771949/what-is-the-difference-between-function-and-procedure-in-pl-sql
+         12> Package : unit: hold multi func and proc spec & body..	
+         13> Index	:A database index is a data structure that improves the speed of data retrieval operations on a database table at the cost of 	additional writes and the use of more storage space to maintain the extra copy of data	.
+		 Indexes have the following disadvantages -
+					they increase the disk space requirements of your database
+					they slow down dml (i.e. inserts, updates and deletes)
+					they increase the maintenance requirements of your Oracle database
+					they may make your queries slower instead of faster
+					
+	http://www.tutorialspoint.com/jdbc/jdbc-sql-syntax.htm
+	
+	http://stackoverflow.com/questions/2973420/what-is-the-difference-b-w-primary-key-and-unique-key
+	http://www.1keydata.com/datawarehousing/data-modeling-levels.html
+	http://www.learndatamodeling.com/cdm.php
+	http://www.asktheoracle.net/sql-performance-tuning.html
+	http://www.oracle.com/technetwork/database/bi-datawarehousing/twp-explain-the-explain-plan-052011-393674.pdf
+	http://www.akadia.com/services/ora_interpreting_explain_plan.html
+	
+	Group by (with SUM,AVG,MAX aggregate functions ) & having clause
+	http://www.programmerinterview.com/index.php/database-sql/sql-having-vs-group-by/
+	http://www.programmerinterview.com/index.php/database-sql/sql-group-by-with-multiple-columns/
+	
+	Rank & Row Number...	
+	http://www.programmerinterview.com/index.php/database-sql/rank-versus-dense_rank/
+	http://moinne.com/blog/ronald/oracle/ranking-your-results-using-rank-dense_rank-and-row_number
+	http://moinne.com/blog/ronald/oracle/keeping-the-first-and-last-in-your-result-with-analytic-functions-in-your-query
+	
+	Keys.....
+	http://www.programmerinterview.com/index.php/database-sql/differences-between-primary-and-foreign-keys/
+	http://www.programmerinterview.com/index.php/database-sql/what-is-referential-integrity/
+	http://www.programmerinterview.com/index.php/database-sql/natural-key-in-database/
+
+-------------------	
+GENERAL:
+-------------------			
+	I do not want to serialize a specific variable in a java class?
+		http://javarevisited.blogspot.com/2012/03/difference-between-transient-and.html
+	What is volatile modifier?
+		http://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html
+	What is the contract for Hascode and equals?
+		If equals() is true hashcode() must be true. If hashcode() is true, equals() may be true
+	What are the advantage/disadvantage of JSON?
+		http://stackoverflow.com/questions/584985/what-are-the-advantages-and-disadvantages-of-json-vs-xml-for-ajax-requests
+	Why would you use Powermock, if you can use Easymock?
+		https://code.google.com/p/powermock/
+	What advantage does generics give in JDK 5?
+		http://javarevisited.blogspot.com/2011/09/generics-java-example-tutorial.html
+		http://javarevisited.blogspot.sg/2012/06/10-interview-questions-on-java-generics.html
+		http://javarevisited.blogspot.sg/2012/04/what-is-bounded-and-unbounded-wildcards.html
+		
+	What are the new features in JDK 7?
+		http://javarevisited.blogspot.sg/2011/09/arm-automatic-resource-management-in.html
+		http://javarevisited.blogspot.sg/2011/09/fork-join-task-java7-tutorial.html
+		http://java67.blogspot.sg/2012/09/what-is-new-in-java-7-top-5-jdk-7.html
+		http://radar.oreilly.com/2011/09/java7-features.html
+		http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html
+		http://donaldojdk.files.wordpress.com/2011/11/55j7.pdf
+		
+	What are the performance advantage given by new collections in JDK 7
+		http://docs.oracle.com/javase/7/docs/technotes/guides/collections/
+		
+		http://docs.oracle.com/javase/7/docs/technotes/guides/collections/designfaq.html
+		Why doesn't Map extend Collection?
+		Why doesn't Collection extend Cloneable and Serializable?
+		
+	what is new JDK 8
+	http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html
+	https://dzone.com/articles/junit-using-easymock?edition=261785&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=dd%202017-01-06
+		
+		
+	Which transaction types throws exceptions?
+		Mandatory throws exception when it is tried to run with no transaction and
+		Never throws exception when it is tried to run with transaction
+	What are the design patterns you have used? What is factory and abstract factory?
+		http://javarevisited.blogspot.com/2011/12/factory-design-pattern-java-example.html
+		http://www.tutorialspoint.com/design_pattern/index.htm
+	How many instances are created for Servlet?
+	How do you stop jvm from creating multiple servlet?
+		http://stackoverflow.com/questions/6298309/how-many-instaces-if-servlet-class-are-created-by-container-after-loading-it-s
+	What are the glitches for using clustered environment?
+	What are the transaction types in EJB?
+	hashcode collision
+	
+
+	How to find which processes are taking all the memory in Unix/Solaris?
+		Solaris:prstat -a -s size
+		Linux:ps ax -o rss,command | sort -nr | head -n 10
+	df -k . ---> Displays, the amount of space allocated, and used for a directory
+	du -k <dir name> - gives me the memory used of all the files inside <dir> 
+	Unix thread dump: 
+		jps -l
+		ps -aef | grep java
+		jstack  >> threaddumps.log
+		kill -3 <java_pid>
+	JVM thread dump output on break signal to separate file 
+		-XX:+UnlockDiagnosticVMOptions -XX:+LogVMOutput -XX:LogFile=jvm.log
+	Heap Dump:
+		jmap -dump:file=D:\temp\heapdumps\dump.bin <PID>
+		
+	Disadvantage of concurrenthashmap
+		http://apurvagnihotri.blogspot.com/2010/06/hashmap-vs-hashtable.html
+		http://www.informit.com/guides/content.aspx?g=java&seqNum=246
+		http://ria101.wordpress.com/2011/12/12/concurrenthashmap-avoid-a-common-misuse/
+	Does concurrenthashmap throws concurrentmodificationexception: No	
+		http://javarevisited.blogspot.com/2013/02/concurrenthashmap-in-java-example-tutorial-working.html
+		http://www.codesuggestions.com/java/java-the-concurrenthashmap-class-tutorial/
+	
+	Hibernate lazy initialization exception
+		http://www.javacodegeeks.com/2012/07/four-solutions-to-lazyinitializationexc_05.html
+	Inline comparator	
+		http://stackoverflow.com/questions/554769/alphabetically-sort-a-java-collection-based-upon-the-tostring-value-of-its-mem	
+		http://www.java2s.com/Code/Java/Collections-Data-Structure/Usesanonymousinnerclasses.htm
+	Hibernate many-many mapping
+		http://www.mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
+		http://www.dzone.com/tutorials/java/hibernate/hibernate-example/hibernate-mapping-many-to-many-using-annotations-1.html
+		http://www.codejava.net/frameworks/hibernate/hibernate-many-to-many-association-annotations-example
+	Difference between inversion of control and Dependency injection
+	Different types of IOC
+		http://howtodoinjava.com/2013/03/19/inversion-of-control-ioc-and-dependency-injection-di-patterns-in-spring-framework-and-related-interview-questions/
+		http://stackoverflow.com/questions/6550700/inversion-of-control-vs-dependency-injection
+		http://www.developersbook.com/spring/interview-questions/spring-interview-questions-faqs.php
+		http://javapapers.com/spring/dependency-injection-di-with-spring/
+	
+	THREADLOCAL:
+		http://java.dzone.com/articles/painless-introduction-javas-threadlocal-storage
+		http://java-success.blogspot.com/2014/01/when-and-how-to-use-java-threadlocal.html
+		http://www.developer.com/design/article.php/3680701/Threads-Versus-The-Singleton-Pattern.htm
+	
+
+	
+added in 2017: 
+	http://www.mkyong.com/regular-expressions/10-java-regular-expression-examples-you-should-know/
+	http://www.mkyong.com/spring/spring-and-java-thread-example/
+	
+	http://javarevisited.blogspot.com/2012/03/add-list-certficates-java-keystore.html
+	http://javarevisited.blogspot.com/2011/10/how-to-use-truncate-and-delete-command.html
+	http://javarevisited.blogspot.com/2011/11/database-transaction-tutorial-example.html
+	http://techienjoy.com/Spring-Singleton-GOF-Singleton-Difference.php#sc
+	http://blog.springsource.com/2007/07/19/debunking-myths-proxies-impact-performance/
+	*******************************
+  New added for Java 2017:
+  
+  https://dzone.com/articles/convert-object-byte-array-and?fromrel=true
+  https://dzone.com/articles/java-cloning-even-copy-constructors-are-not-suffic?edition=262903&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=dd%202017-01-17
+  https://dzone.com/articles/3-ways-to-use-redis-hash-in-java?fromrel=true
+  https://dzone.com/articles/optimizing-a-hashing-strategy?fromrel=true
+  https://dzone.com/articles/how-hashmap-works-in-java?fromrel=true
+  https://dzone.com/articles/java-hashing?fromrel=true
+  https://dzone.com/articles/whats-wrong-java-8-part-v?fromrel=true
+  https://dzone.com/articles/lazy-loading-is-a-code-smell?fromrel=true
+  https://dzone.com/articles/getting-the-most-out-of-your-hashmaps?fromrel=true
+  https://dzone.com/articles/top-10-causes-java-ee
+  https://dzone.com/articles/java-7-hashmap-vs?fromrel=true
+  https://dzone.com/articles/hard-rocking-with-interface-segregation-principle?fromrel=true
+  https://dzone.com/articles/hashing-implementation-using-javautilobjects
+  
+
+
+
+
+
+
+PERFORMANCE AND TUNING:
+-------------------
+   Added in 2017
+   https://zeroturnaround.com/rebellabs/jvm-options-cheat-sheet/
+   https://dzone.com/articles/java-memory-and-cpu-monitoring-tools-and-technique
+
+	http://www.eclipse.org/mat/
+	How did you do Profiling using JProfilier?
+		http://blog.ej-technologies.com/2013/07/profiling-class-loaders-and-solving.html
+		http://resources.ej-technologies.com/jprofiler/help/doc/indexRedirect.html
+		http://resources.ej-technologies.com/jprofiler/help/doc/help.pdf		
+	Java Memory Leak:
+		http://www.javacodegeeks.com/2013/04/how-to-create-a-memory-leak.html
+		http://www.javacodegeeks.com/2013/05/monitoring-and-detecting-memory-leaks-in-your-java-application.html
+	What is Heap?
+		http://javarevisited.blogspot.sg/2011/05/java-heap-space-memory-size-jvm.html
+		http://javarevisited.blogspot.com.au/2013/01/difference-between-stack-and-heap-java.html
+		http://javarevisited.blogspot.com/2011/09/javalangoutofmemoryerror-permgen-space.html
+		http://javarevisited.blogspot.sg/2012/01/tomcat-javalangoutofmemoryerror-permgen.html
+		http://javarevisited.blogspot.sg/2012/01/find-max-free-total-memory-in-java.html
+		http://javarevisited.blogspot.com/2011/08/increase-heap-size-maven-ant.html
+		http://javarevisited.blogspot.com/2011/11/hotspot-jvm-options-java-examples.html
+	What is perm memory space
+		http://stackoverflow.com/questions/1279449/what-is-perm-space
+		http://stackoverflow.com/questions/88235/dealing-with-java-lang-outofmemoryerror-permgen-space-error	
+	What is garbage collection? If the jvm memory is 99% full how does jvm clears up the memory?
+		http://javarevisited.blogspot.sg/2011/04/garbage-collection-in-java.html
+		http://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html
+		http://www.cubrid.org/blog/dev-platform/understanding-java-garbage-collection/
+		http://www.fasterj.com/articles/oraclecollectors1.shtml
+		http://apmblog.compuware.com/2011/05/11/how-garbage-collection-differs-in-the-three-big-jvms/
+		
+	added in 2017 ..
+    http://blog.takipi.com/garbage-collectors-serial-vs-parallel-vs-cms-vs-the-g1-and-whats-new-in-java-8/
+    https://www.infoq.com/articles/G1-One-Garbage-Collector-To-Rule-Them-All	
+	http://javaeesupportpatterns.blogspot.com/2013/02/java-8-from-permgen-to-metaspace.html
+	
+	memory  overhead in 64bit than 32bit architecture
+	https://stackoverflow.com/questions/35441224/java-64-bit-uses-more-memory-than-a-32-bit-version
+	https://stackoverflow.com/questions/4407699/64-bit-java-for-small-stand-alone-applications/4408987#4408987
+	
+	What are the performance characteristics of 64-bit versus 32-bit VMs?
+
+Generally, the benefits of being able to address larger amounts of memory come with a small performance loss in 64-bit VMs versus running the same application on a 32-bit VM. This is due to the fact that every native pointer in the system takes up 8 bytes instead of 4. The loading of this extra data has an impact on memory usage which translates to slightly slower execution depending on how many pointers get loaded during the execution of your Java program. The good news is that with AMD64 and EM64T platforms running in 64-bit mode, the Java VM gets some additional registers which it can use to generate more efficient native instruction sequences. These extra registers increase performance to the point where there is often no performance loss at all when comparing 32 to 64-bit execution speed.
+The performance difference comparing an application running on a 64-bit platform versus a 32-bit platform on SPARC is on the order of 10-20% degradation when you move to a 64-bit VM. On AMD64 and EM64T platforms this difference ranges from 0-15% depending on the amount of pointer accessing your application performs.
+
+
+If you switch to 64-bit on x64 you can take advantage of the 64-bit registers and additional registers. This might improve performance by 5%.
+
+You can use -XX:+UseCompressedOops to use the same memory footprint (it uses 35-bit address space, up to 32 GB in 32-bit values) but I have found it ends up costing about 5% of performance.
+
+    Java 8 memeory model:
+	https://stackoverflow.com/questions/20563047/jdk-8-memory-layout-and-garbage-collection
+	
+	
+		
+	
+	How to tune Java application?
+		http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html
+		http://java.dzone.com/articles/principles-java-application
+		http://mfinocchiaro.files.wordpress.com/2008/07/java-virtual-machine-neutral.pdf
+		http://java-performance.com/
+		
+		http://www.cubrid.org/blog/dev-platform/how-to-tune-java-garbage-collection/ ************
+		
+		
+	What do you understand by classloading?
+		http://javarevisited.blogspot.sg/2012/07/when-class-loading-initialization-java-example.html
+		http://javarevisited.blogspot.com/2012/12/how-classloader-works-in-java.html
+		http://javarevisited.blogspot.com/2011/01/how-classpath-work-in-java.html
+		http://javarevisited.blogspot.sg/2011/08/classnotfoundexception-in-java-example.html
+		http://javarevisited.blogspot.sg/2011/06/noclassdeffounderror-exception-in.html
+		http://javarevisited.blogspot.com/2011/07/classnotfoundexception-vs.html
+		http://javarevisited.blogspot.com/2011/07/javalangunsupportedclassversionerror.html	 ---porte hobe...
+	JMETER
+		http://jmeter.apache.org/usermanual/build-ws-test-plan.html
+		https://jmeter.apache.org/usermanual/test_plan.html
+	How does Load balancer ensures minimum session replication?
+		http://docs.oracle.com/cd/E21764_01/web.1111/e13709/failover.htm	
+	how to retrieve memory when multiple threads running  java
+	How do you tune a query in database?
+		http://www.dba-oracle.com/art_sql_tune.htm
+		http://docs.oracle.com/cd/B13789_01/text.101/b10729/aoptim.htm
+		http://www.relationaldbdesign.com/extended-database-features/module4/advantages-disadvantages-index-organized.php
+	http://stackoverflow.com/questions/2213340/what-is-daemon-thread-in-java
+	
+	
+	***https://dzone.com/articles/how-to-reduce-long-gc-pause?edition=261785&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=dd%202017-01-06
+	
+-------------------	
+CORE JAVA:
+-------------------	
+    http://javarevisited.blogspot.sg/2013/02/concurrent-collections-from-jdk-56-java-example-tutorial.html
+	
+	http://refcardz.dzone.com/
+	Java questions:
+		http://java67.blogspot.sg/2012/09/top-10-tricky-java-interview-questions-answers.html
+		http://java67.blogspot.sg/2012/09/top-10-tough-core-java-interview-questions-answers.html
+		http://javarevisited.blogspot.com/2011/04/top-20-core-java-interview-questions.html
+		http://robaustin.wikidot.com/50-java-interview-questions
+		
+	Mixing static and non static synchronized method - Java mistake 2
+		http://javarevisited.blogspot.sg/2012/03/mixing-static-and-non-static.html
+	Why String Immutable
+		http://javarevisited.blogspot.com/2010/10/why-string-is-immutable-in-java.html
+	Write immutable class
+		http://javarevisited.blogspot.com/2013/03/how-to-create-immutable-class-object-java-example-tutorial.html
+	Unmodifiable/immutable Collection
+		http://stackoverflow.com/questions/6658682/how-to-return-a-thread-safe-immutable-collection-in-java	
+	How hashmap works
+		http://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html
+		http://javarevisited.blogspot.com/2015/08/difference-between-HashMap-vs-TreeMap-vs-LinkedHashMap-Java.html
+		http://javarevisited.blogspot.com/2012/12/how-to-sort-hashmap-java-by-key-and-value.html
+	Enum Singleton:
+		http://javarevisited.blogspot.gr/2012/07/why-enum-singleton-are-better-in-java.html
+		http://javarevisited.blogspot.com/2011/08/enum-in-java-example-tutorial.html
+		http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-with-examples#eager-initialization
+		http://javarevisited.blogspot.com/2012/09/what-is-enummap-in-java-example-tutorial.html
+		
+		http://www.java67.com/2013/11/difference-between-regularenumset-and-jumboenumset-java.html
+		
+		Enum as state m/c
+		http://vanillajava.blogspot.sg/2011/06/java-secret-using-enum-as-state-machine.html
+		
+	Access private field outside class:
+		http://javarevisited.blogspot.sg/2012/05/how-to-access-private-field-and-method.html	
+	Serialization:
+		http://javarevisited.blogspot.sg/2011/04/top-10-java-serialization-interview.html
+		http://www.javalobby.org/java/forums/t17491.html
+		http://www.codingeek.com/java/io/differences-serializable-externalizable-interface-java-tutorial/
+		http://java-questions.com/Serialization-interview-questions.html
+	Volatile:
+		http://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html	
+	Exception in Java
+		http://javarevisited.blogspot.sg/2011/12/checked-vs-unchecked-exception-in-java.html
+		Use checked Exceptions (extend Exception) where you expect the application can recover from the exceptional state it came into
+		Use unchecked exception (extend RuntimeException) for scenarios where you don't expect possible recovery
+	Exception thrown without try/catch or throw	
+		http://stackoverflow.com/questions/1375113/java-exception-not-caught		
+	Rethrow an Exception Without Wrapping them
+		http://robaustin.wikidot.com/rethrow-exceptions
+	What are the new features in JDK 7?
+		http://java67.blogspot.sg/2012/09/what-is-new-in-java-7-top-5-jdk-7.html 
+		 Allow using String in Switch case
+		 Multiple Exception in one catch block
+		 Automatic resource management or ARM blocks
+		 Fork-Join framework in Java 7
+		 Diamond operator <> for type inference
+		 
+		http://radar.oreilly.com/2011/09/java7-features.html
+		http://javarevisited.blogspot.sg/2011/09/fork-join-task-java7-tutorial.html
+	Java Security:
+		http://idiotechie.com/java-security-tutorial-step-by-step-guide-to-create-ssl-connection-and-certificates/
+		http://idiotechie.com/understanding-transport-layer-security-secure-socket-layer/
+		http://javarevisited.blogspot.sg/2011/11/ldap-authentication-active-directory.html
+		http://javarevisited.blogspot.com/2013/07/how-ssl-https-and-certificates-works-in-java-web-application.html	
+	Others:
+		http://javarevisited.blogspot.com/2011/02/how-to-write-equals-method-in-java.html ***
+		http://javarevisited.blogspot.sg/2011/11/how-to-override-compareto-method-in.html ***
+		http://javarevisited.blogspot.com/2011/08/enum-in-java-example-tutorial.html  ----porte hobe
+		http://javarevisited.blogspot.com/2012/02/java-mistake-1-using-float-and-double.html
+		
+		http://javarevisited.blogspot.com/2012/02/fail-safe-vs-fail-fast-iterator-in-java.html
+		http://javahungry.blogspot.com/2014/04/fail-fast-iterator-vs-fail-safe-iterator-difference-with-example-in-java.html
+		
+		http://javarevisited.blogspot.com/2011/04/difference-between-concurrenthashmap.html
+		http://javarevisited.blogspot.com/2012/02/difference-between-linkedlist-vs.html
+	What advantage does generics give in JDK 5?
+			http://javarevisited.blogspot.com/2011/09/generics-java-example-tutorial.html
+			http://javarevisited.blogspot.sg/2012/06/10-interview-questions-on-java-generics.html
+	http://javarevisited.blogspot.sg/2011/10/how-substring-in-java-works.html --porte hobe...
+	How do you stop jvm from creating multiple servlet?
+		http://stackoverflow.com/questions/6298309/how-many-instaces-if-servlet-class-are-created-by-container-after-loading-it-s	
+	How to reverse order of Singly LinkedList without using Java API or recursion:
+		http://www.technicalypto.com/2010/01/linked-lists.html  ???
+		http://www.technicalypto.com/2010/01/java-program-to-reverse-singly-linked.html
+		http://www.codeproject.com/Articles/27742/How-To-Reverse-a-Linked-List-3-Different-Ways
+	Difference between ArrayList and LinkedList
+		http://javarevisited.blogspot.com/2012/02/difference-between-linkedlist-vs.html
+		http://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist
+		http://beginnersbook.com/2013/12/difference-between-arraylist-and-linkedlist-in-java/
+	Internal implementation of Set/HashSet	
+		http://javahungry.blogspot.com/2013/08/how-sets-are-implemented-internally-in.html		
+	how to find last element of cyclic linkedList	-porte hobe...
+		http://javarevisited.blogspot.com/2013/05/find-if-linked-list-contains-loops-cycle-cyclic-circular-check.html
+		http://en.wikipedia.org/wiki/Cycle_detection#Tortoise_and_hare		
+	How hash map works in java or How get() method works internally
+		http://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+		http://howtodoinjava.com/2012/10/09/how-hashmap-works-in-java/	
+	hashcode collision
+	
+	Advantage of extending Thread
+		http://stackoverflow.com/questions/16489026/what-is-the-main-advantage-of-extending-thread-class-or-when-to-extend-thread-i
+	Concurrency JDK 7:
+		http://www.javacodegeeks.com/2013/05/five-advanced-java-synchronizers-you-probably-dont-know.html
+		http://www.vogella.com/articles/JavaConcurrency/article.html ****
+		http://docs.oracle.com/javase/tutorial/essential/concurrency/
+		
+		added in 2017 
+		https://dzone.com/refcardz/core-java-concurrencyz
+		https://www.javacodegeeks.com/2015/09/the-java-util-concurrent-package.html
+		
+	Fork and Join
+		http://howtodoinjava.com/2014/05/27/forkjoin-framework-tutorial-forkjoinpool-example/
+		https://weblogs.java.net/blog/editor/archive/2012/04/22/multithread-programming-versus-parallel-programming-or-whats-wrong-java-threads
+		http://stackoverflow.com/questions/7926864/how-is-the-fork-join-framework-better-than-a-thread-pool
+		http://www.concretepage.com/java/jdk7/example-of-forkjointask-in-java
+		
+		http://www.h-online.com/developer/features/The-fork-join-framework-in-Java-7-1762357.html
+		http://www.javaworld.com/article/2078440/enterprise-java/java-tip-when-to-use-forkjoinpool-vs-executorservice.html
+		http://www.javacreed.com/java-fork-join-example/
+		
+	Thread:
+		http://javarevisited.blogspot.com/2011/02/how-to-implement-thread-in-java.html
+		http://javarevisited.blogspot.sg/2011/04/synchronization-in-java-synchronized.html
+		
+		private static final String LOCK = "lock"; //not recommended 
+		private static final Object OBJ_LOCK = new Object(); //better
+		public void process() { synchronized(LOCK) 
+		{ ........ } 
+		}
+		
+		public class Singleton{
+		private static volatile Singleton _instance;
+		public static Singleton getInstance(){
+			if(_instance == null){
+				synchronized(Singleton.class){
+					if(_instance == null) 
+					_instance = new Singleton();
+				} 
+			} 
+		return _instance;
+		}
+	
+		http://javarevisited.blogspot.sg/2012/03/difference-between-start-and-run-method.html
+		http://javarevisited.blogspot.com/2012/01/difference-thread-vs-runnable-interface.html
+		http://javarevisited.blogspot.com/2012/01/how-to-write-thread-safe-code-in-java.html
+		
+		1) Immutable objects are by default thread-safe because there state can not be modified once created. Since String is immutable in Java, its inherently thread-safe.
+		2) Read only or final variables in Java are also thread-safe in Java.
+		3) Locking is one way of achieving thread-safety in Java.
+		4) Static variables if not synchronized properly becomes major cause of thread-safety issues.
+
+		5) Example of thread-safe class in Java: Vector, Hashtable, ConcurrentHashMap, String etc.
+		6) Atomic operations in Java are thread-safe e.g. reading a 32 bit int from memory because its an atomic operation it can't interleave with other thread.
+		7) local variables are also thread-safe because each thread has there own copy and using local variables is good way to writing thread-safe code in Java.
+		8) In order to avoid thread-safety issue minimize sharing of objects between multiple thread.
+		9) Volatile keyword in Java can also be used to instruct thread not to cache variables and read from main memory and can also instruct JVM not to reorder or optimize code from threading perspective
+		
+		
+		http://javarevisited.blogspot.com/2011/12/difference-between-wait-sleep-yield.html   --- thread different state picture.
+		
+		What is the state of Thread, when we call sleep(), wait() or yeild() methods?
+          A thread can be in WAITING or TIMED_WAITING state, due to a call to wait() or sleep() method. If you call wait and sleep without timeout then Thread will be in WAITING (ThreadState.WAITING) state, while a call to sleep() and wait() with timeout will leave thread in TIMED_WAITING state. Difference between WAITING and TIMED_WAITING state is timeout, which means thread will come out once timeout is expired.
+
+
+        
+		
+		http://javarevisited.blogspot.com/2011/05/wait-notify-and-notifyall-in-java.html
+		http://javarevisited.blogspot.com/2012/02/why-wait-notify-and-notifyall-is.html
+		http://parameshk.blogspot.com/2013/11/why-wait-notify-and-notifyall-methods.html ****
+		As every object in java has only one lock(monitor) and wait(),notify(),notifyAll() are used for monitor sharing thats why they are part of Object class rather than Thread class. the wait() method will release the lock on the specified object and waits when it can retrieve the lock
+		
+		EXAMPLE >>>>>>
+		Let’s take a real time banking scenario. Suppose two or more customers having a joint account, which can be permitted to perform the transactions through multiple channels like Teller, ATM, Mobile Banking, and Internet Banking. Currently the account having the balance 2000/- and the first user trying to purchase worth of 1500/- through Internet Banking other user trying to withdraw 1500/- through ATM. Here whichever the channel first access the account to perform the transaction will acquires a lock and other channel will wait for the lock. The channel which is waiting for lock status is not aware of which channel acquires the lock and at the same time the channel which is already acquired the lock is not aware of that who are waiting to acquire lock on the particular account. Here lock is applied on the account and not on channel
+		
+		http://www.ibm.com/developerworks/java/library/j-jtp04186/index.html   ----Java theory and practice: Introduction to nonblocking algorithms
+		
+		
+		Dead Lock..
+		http://javarevisited.blogspot.com/2010/10/what-is-deadlock-in-java-how-to-fix-it.html
+		http://jaroslav-sedlacek.blogspot.com/2011/03/deadlock-despite-consistent-lock.html
+		
+		http://javarevisited.blogspot.sg/2012/02/what-is-race-condition-in.html
+		http://javarevisited.blogspot.com/2012/02/what-is-blocking-methods-in-java-and.html
+		http://javarevisited.blogspot.com/2012/05/how-to-use-threadlocal-in-java-benefits.html porte hobe
+		http://java.dzone.com/articles/painless-introduction-javas-threadlocal-storage 
+		
+		http://javarevisited.blogspot.com/2011/10/how-to-stop-thread-java-example.html	
+		http://javarevisited.blogspot.com/2013/03/reentrantlock-example-in-java-synchronized-difference-vs-lock.html
+		http://www.journaldev.com/1162/java-multi-threading-concurrency-interview-questions-with-answers
+		http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html
+		 
+		PRODUCER / CONSUMER ....
+		http://javarevisited.blogspot.com/2012/02/producer-consumer-design-pattern-with.html  ****with blocking queue
+		http://java67.blogspot.com/2012/12/producer-consumer-problem-with-wait-and-notify-example.html
+		http://www.journaldev.com/1034/java-blockingqueue-example-implementing-producer-consumer-problem
+		http://www.javacodegeeks.com/2012/05/solving-producer-consumer-problem-in.html
+		
+		added in 2017
+		https://dzone.com/articles/producer-consumer-design
+		https://www.javacodegeeks.com/2012/05/solving-producer-consumer-problem-in.html
+
+		Threadpool executor....
+		http://www.journaldev.com/1069/java-thread-pool-example-using-executors-and-threadpoolexecutor
+		http://www.journaldev.com/1650/java-futuretask-example-program
+		http://www.journaldev.com/1024/java-thread-join-example-with-explanation
+		
+		
+		http://crunchify.com/hashmap-vs-concurrenthashmap-vs-synchronizedmap-how-a-hashmap-can-be-synchronized-in-java/		
+		http://javahungry.blogspot.com/2014/02/hashmap-vs-concurrenthashmap-java-collections-interview-question.html
+		
+		Disadvantage of concurrenthashmap
+		http://apurvagnihotri.blogspot.com/2010/06/hashmap-vs-hashtable.html
+		http://www.informit.com/guides/content.aspx?g=java&seqNum=246
+		http://ria101.wordpress.com/2011/12/12/concurrenthashmap-avoid-a-common-misuse/
+		
+	    Does concurrenthashmap throws concurrentmodificationexception: No	
+		http://javarevisited.blogspot.com/2013/02/concurrenthashmap-in-java-example-tutorial-working.html
+		http://www.codesuggestions.com/java/java-the-concurrenthashmap-class-tutorial/
+		
+        http://www.journaldev.com/1162/java-multi-threading-concurrency-interview-questions-with-answers#atomic-operation
+		http://javarevisited.blogspot.com/2011/07/java-multi-threading-interview.html
+		http://www.journaldev.com/1061/java-synchronization-and-thread-safety-tutorial-with-examples
+		
+		http://www.journaldev.com/2377/java-lock-example-and-concurrency-lock-vs-synchronized
+		https://dzone.com/articles/how-annotations-work-java
+		
+		**** Special for investment banking...CORE JAVA..
+		stack , hashmap , hashset implementation
+		HASH MAP
+		http://tekmarathon.com/2013/03/11/creating-our-own-hashmap-in-java/
+		http://tekmarathon.com/2013/05/14/algorithm-to-find-substring-in-a-string-kmp-algorithm/comment-page-1/#comment-5909
+		HASH SET
+		http://javahungry.blogspot.com/2013/08/how-sets-are-implemented-internally-in.html
+		
+		STACK:
+		http://www.tutorialspoint.com/javaexamples/data_stack.htm
+		Queue:
+		http://www.tutorialspoint.com/javaexamples/data_queue.htm
+		D-Queue:
+		http://www.java2novice.com/data-structures-in-java/queue/double-ended-queue/
+		
+		Quick Sort :
+		http://www.java2novice.com/java-sorting-algorithms/quick-sort/
+		http://javarevisited.blogspot.com/2014/08/quicksort-sorting-algorithm-in-java-in-place-example.html
+		http://javarevisited.blogspot.com/2014/12/insertion-sort-algorithm-in-java-to-array-example.html
+		
+		http://betterexplained.com/articles/sorting-algorithms/
+		http://javarevisited.blogspot.com/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html
+		
+		Coding tech :
+		http://javahungry.blogspot.com/2013/06/count-number-of-words-in-string-example-java-program-code.html
+		String[] words = string.split("\\s+");
+		https://www.daniweb.com/software-development/java/threads/470704/java-code-to-make-an-word-frequency-counter
+		http://www.dotnetperls.com/count-letter-frequencies-java  ****
+		
+		http://javahungry.blogspot.com/2013/12/first-non-repeated-character-in-string-java-program-code-example.html  ---same logic : convert string to char array and put them in hashmap
+		http://javahungry.blogspot.com/2013/10/count-total-number-of-times-each-alphabet-appears-in-the-string.html ---same logic : convert string to char array and put them in hashmap
+		http://www.guideforschool.com/510576-program-to-find-frequency-count-of-every-alphabets-in-a-string/
+		
+		
+		DFS & BFS... For Tree..
+		http://codereview.stackexchange.com/questions/62192/binary-search-tree-with-tree-traversal
+		http://stackoverflow.com/questions/5262308/how-do-implement-a-breadth-first-traversal ---inorder,preorder,postorder 
+		http://rosettacode.org/wiki/Tree_traversal
+		
+		BFS for Graph
+		http://www.sanfoundry.com/java-program-traverse-graph-using-bfs/
+		http://algs4.cs.princeton.edu/41graph/BreadthFirstPaths.java.html
+		
+		sorting :
+		http://www.stoimen.com/blog/2012/02/20/computer-algorithms-bubble-sort/
+		http://javarevisited.blogspot.com/2014/08/bubble-sort-algorithm-in-java-with.html
+		http://java67.blogspot.com/2014/07/quicksort-algorithm-in-java-in-place-example.html
+		http://www.stoimen.com/blog/2012/03/05/computer-algorithms-merge-sort/
+		http://www.sanfoundry.com/java-program-implement-bucket-sort/
+		http://www.stoimen.com/blog/2012/03/05/computer-algorithms-merge-sort/
+		
+		
+		
+		
+		
+		Interview Miscellaneous 
+       http://crackingjavainterviews.blogspot.com/2013/04/cracking-core-java-interviews.
+	   http://crackingjavainterviews.blogspot.com/2013/04/top-interview-questions-for-investment.html
+	   https://javainterviewsquestions.wordpress.com/
+	   http://javahungry.blogspot.com/2013/12/first-non-repeated-character-in-string-java-program-code-example.html
+	   http://crackingjavainterviews.blogspot.in/2013/04/can-keys-in-hashing-data-structure-be.html
+	   http://crackingjavainterviews.blogspot.in/2013/04/what-do-you-understand-by-java-memory.html  ****
+	   http://crackingjavainterviews.blogspot.in/2013/05/what-do-you-understand-by-big-o.html
+	   http://crackingjavainterviews.blogspot.in/2013/04/discuss-internals-of-concurrent-hashmap.html
+	   http://crackingjavainterviews.blogspot.in/2013/04/what-are-key-principles-when-designing.html
+	   http://crackingjavainterviews.blogspot.in/2015/02/how-would-you-count-word-occurrence-in.html
+	   http://crackingjavainterviews.blogspot.in/2013/06/given-collection-of-1-million-integers.html
+	   http://crackingjavainterviews.blogspot.in/2013/06/removing-elements-while-iterating-over.html
+	   http://crackingjavainterviews.blogspot.in/2013/05/what-does-collectionsunmodifiablecollec.html
+	   
+	   http://java67.blogspot.sg/2012/07/java-program-fibonacci-series-with.html
+	   http://www.java2blog.com/2014/07/how-to-reverse-linked-list-in-java.html
+	   http://javarevisited.blogspot.com/2012/12/how-to-check-if-number-is-palindrome-or-not-example.html
+	   
+	   
+	   
+	   
+	   
+		
+		Cyclometric complexity :
+		http://www.tutorialspoint.com/software_testing_dictionary/cyclomatic_complexity.htm
+		http://stackoverflow.com/questions/tagged/cyclomatic-complexity
+		http://stackoverflow.com/questions/31699326/when-calculating-cyclomatic-complexity-should-statements-exiting-the-current-me
+		http://stackoverflow.com/questions/31247366/calculate-cyclomatic-complexity-at-run-time-for-generated-program-tree
+		http://www.coolinterview.com/interview/4881/
+		http://testingwarrior.blogspot.com/2011/12/cyclomatic-complexity-with-example.html
+		
+		JNDI: 
+		http://stackoverflow.com/questions/23037845/how-does-the-jndi-lookup-work-in-this-jms-example
+		https://tomcat.apache.org/tomcat-6.0-doc/jndi-datasource-examples-howto.html
+		
+		JPA :
+		http://www.javaworld.com/article/2077817/java-se/understanding-jpa-part-1-the-object-oriented-paradigm-of-data-persistence.html
+		http://www.javacodegeeks.com/2015/02/jpa-tutorial.html
+		
+		JMS
+		http://javadecodedquestions.blogspot.sg/2012/02/jms-interview-questions.html
+		
+		XML // all links
+		http://javarevisited.blogspot.com/2015/07/how-to-read-xml-file-as-string-in-java-example.html
+		
+		Mine added : 
+	http://www.mkyong.com/regular-expressions/10-java-regular-expression-examples-you-should-know/
+	http://www.mkyong.com/spring/spring-and-java-thread-example/
+	
+	http://javarevisited.blogspot.com/2012/03/add-list-certficates-java-keystore.html
+	http://javarevisited.blogspot.com/2011/10/how-to-use-truncate-and-delete-command.html
+	http://javarevisited.blogspot.com/2011/11/database-transaction-tutorial-example.html
+	http://techienjoy.com/Spring-Singleton-GOF-Singleton-Difference.php#sc
+	http://blog.springsource.com/2007/07/19/debunking-myths-proxies-impact-performance/
+	
+	Added in 2017 
+	
+	Java 8
+	https://glenware.wordpress.com/2017/02/07/java-8-streams-cookbook/?
+	https://glenware.wordpress.com/2017/02/05/how-lambdas-and-anonymous-inner-classesaic-work/
+	
+	
+	https://flyingbytes.github.io/programming/java8/functional/part1/2017/01/23/Java8-Part1.html
+	https://blog-rmannibucau.rhcloud.com/#/post/java-stream-error-handling
+	https://dzone.com/articles/java-collections-part-1?edition=273883&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=dd%202017-03-03
+		
+		
+-------------------	
+IF TIME PERMITS:
+-------------------			
+	
+
+CLUSTER AND LOAD BALANCE:
+	http://www.mulesoft.com/tomcat-clustering
+	http://stackoverflow.com/questions/15092137/difference-between-clustering-and-load-balancing
+	http://standardwisdom.com/softwarejournal/2009/09/clustering-vs-load-balancing-what-is-the-difference/
+	http://tomcat.apache.org/tomcat-7.0-doc/cluster-howto.html
+	http://tomcat.apache.org/tomcat-7.0-doc/balancer-howto.html
+	How does Load balancer ensures minimum session replication?
+		http://docs.oracle.com/cd/E21764_01/web.1111/e13709/failover.htm
+	
+
+
+PROJECT MANAGEMENT:
+	Estimation techniques:
+		Use Case Points (UCP) : technique used to forecast the software size for software development projects
+			http://www.codeproject.com/Articles/9913/Project-Estimation-with-Use-Case-Points
+		Function point Analysis: unit of measurement to express the amount of business functionality an information system provides to a user
+		Complexity Point Estimation:
+		Work breakdown structure (WBS): deliverable oriented decomposition of a project into smaller components
+		COCOMO® II:estimate the cost, effort, and schedule when planning a new software development activity
+		Wideband Delphi: consensus-based technique for estimating effort
+	
+	
+JSON:
+	What are the advantage/disadvantage of JSON?
+		http://stackoverflow.com/questions/584985/what-are-the-advantages-and-disadvantages-of-json-vs-xml-for-ajax-requests
+	jso-Jackson:JSON Converters
+		http://www.mkyong.com/java/how-to-convert-java-object-to-from-json-jackson/
+		http://www.mkyong.com/java/how-do-convert-java-object-to-from-json-format-gson-api/	
+		http://wiki.fasterxml.com/JacksonInFiveMinutes		
+
+J-Query cheet sheet :
+http://youmightnotneedjquery.com/
+
+PDF GENERATION:
+	http://itextpdf.com/book/examples.php
+-------	
+FUSION CHART:
+	http://docs.fusioncharts.com/charts/Code/JavaScript/index.html
+-------
+Spring LDAP:
+	http://javarevisited.blogspot.sg/2011/11/ldap-authentication-active-directory.html
+	http://javarevisited.blogspot.com/2012/09/difference-between-truststore-vs-keyStore-Java-SSL.html
+What do you understand by SOA?	
+	http://searchsoa.techtarget.com/definition/service-oriented-architecture
+	http://en.wikipedia.org/wiki/Service-oriented_architecture
+Why would you use Powermock, if you can use Easymock?
+	https://code.google.com/p/powermock/
+Apache Common:
+	http://commons.apache.org/
+MQ:
+	http://suhasjavablog.wordpress.com/2012/03/27/ibm-mq-basics/
+jasypt 1.9.0: Password encoder, has spring integration
+	http://www.jasypt.org/
+javassist 3.8.0.GA: Modify class at loadtime, helps to modify classes in jar files
+	http://www.jboss.org/javassist	
+cglib 2.2: 
+	As of Spring 3.2, it is no longer necessary to add CGLIB to your project classpath, 
+	as CGLIB classes are repackaged under org.springframework and included directly in the spring-core JAR	
+	
+OpenStack :
+
+http://opensource.com/resources/what-is-openstack
+https://en.wikipedia.org/wiki/OpenStack
+
+
+
+
+
+
+Hadoop :
+https://developer.yahoo.com/hadoop/tutorial/
+
+http://4hadooper.blogspot.com/2014/03/ccd-410-questions.html
+  
+*******************************
+machine learning : https://medium.com/machine-learnings/a-humans-guide-to-machine-learning-e179f43b67a0#.nt8g3v250
+                   http://machinelearningmastery.com/techniques-to-understand-machine-learning-algorithms-without-the-background-in-mathematics/
+				   http://muratbuffalo.blogspot.com/2016/12/learning-machine-learning-beginners.html
+				   https://dzone.com/articles/understanding-machine-learning
+				   
+				   https://dzone.com/big-data-analytics-tutorials-tools-news/list
+-------------------	
+
+Spark 1.6 or 2.0
+------------------
+
+6-22-2017
+
+https://www.quora.com/What-if-a-spark-context-dies-in-Apache-Spark-Is-this-a-single-point-of-failure-or-will-the-program-come-to-a-halt
+https://www.quora.com/How-can-I-run-multiple-spark-jobs-on-same-spark-context
+https://www.quora.com/How-do-I-decide-the-number-of-worker-nodes-in-Apache-Spark-Does-any-formula-exist
+
+
+https://spark.apache.org/docs/latest/quick-start.html
+https://spark.apache.org/docs/latest/programming-guide.html
+https://github.com/apache/spark/tree/master/examples/src/main/java/org/apache/spark/examples
+
+http://www.edupristine.com/blog/apache-spark-rdd-transformations-actions
+https://github.com/poonam20/Apache-Spark-Projects/tree/master/CarsProject
+https://github.com/poonam20/Apache-Spark-Projects/blob/master/AirlinesProject/SparkAirlineAanalytics.md
+http://www.edupristine.com/blog/using-spark-sql-engine
+
+https://www.edureka.co/blog/apache-spark-combinebykey-explained
+http://codingjunkie.net/spark-combine-by-key/
+http://apache-spark-user-list.1001560.n3.nabble.com/aggregateByKey-vs-combineByKey-td15321.html
