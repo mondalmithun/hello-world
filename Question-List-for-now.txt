@@ -1064,3 +1064,17 @@ http://www.edupristine.com/blog/using-spark-sql-engine
 https://www.edureka.co/blog/apache-spark-combinebykey-explained
 http://codingjunkie.net/spark-combine-by-key/
 http://apache-spark-user-list.1001560.n3.nabble.com/aggregateByKey-vs-combineByKey-td15321.html
+
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-transformations.html
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-shuffle.html
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-lineage.html
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-SchedulerBackend.html
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-dagscheduler.html
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html
+
+http://backtobazics.com/big-data/spark/apache-spark-rdd-operations-transformation-and-action/
+
+
+http://www.guru99.com/mongodb-tutorials.html
+https://www.mongodb.com/download-center#enterprise
+https://www.tutorialspoint.com/mongodb/mongodb_query_document.htm
