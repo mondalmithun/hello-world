@@ -1078,3 +1078,16 @@ http://backtobazics.com/big-data/spark/apache-spark-rdd-operations-transformatio
 http://www.guru99.com/mongodb-tutorials.html
 https://www.mongodb.com/download-center#enterprise
 https://www.tutorialspoint.com/mongodb/mongodb_query_document.htm
+
+Mongo with spark:
+
+https://databricks.com/blog/2015/03/20/using-mongodb-with-spark.html
+http://www.focusedsupport.com/blog/analytics-using-spark-and-mongo/
+https://www.mongodb.com/blog/post/tutorial-for-operationalizing-spark-with-mongodb
+https://github.com/plaa/mongo-spark/blob/master/src/main/java/JavaWordCount.java
+
+Guice :
+http://www.journaldev.com/2403/google-guice-dependency-injection-example-tutorial
+http://www.journaldev.com/2394/java-dependency-injection-design-pattern-example-tutorial
+
+http://www.journaldev.com/8079/scala-tuples-and-maps-example
