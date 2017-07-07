@@ -1091,3 +1091,9 @@ http://www.journaldev.com/2403/google-guice-dependency-injection-example-tutoria
 http://www.journaldev.com/2394/java-dependency-injection-design-pattern-example-tutorial
 
 http://www.journaldev.com/8079/scala-tuples-and-maps-example
+
+
+
+http://coe4bd.github.io/HadoopHowTo/sparkJava/sparkJava.html
+https://www.cloudera.com/documentation/enterprise/5-5-x/topics/spark_develop_run.html
+https://github.com/vaquarkhan/vk-wiki-notes/wiki/Developing-Apache-Spark-Java-Applications-on-Eclipse
