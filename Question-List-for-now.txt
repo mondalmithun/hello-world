@@ -1097,3 +1097,8 @@ http://www.journaldev.com/8079/scala-tuples-and-maps-example
 http://coe4bd.github.io/HadoopHowTo/sparkJava/sparkJava.html
 https://www.cloudera.com/documentation/enterprise/5-5-x/topics/spark_develop_run.html
 https://github.com/vaquarkhan/vk-wiki-notes/wiki/Developing-Apache-Spark-Java-Applications-on-Eclipse
+
+Java with dataframe
+https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedUntypedAggregation.java
+https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedTypedAggregation.java
+https://stackoverflow.com/questions/34302547/dataframe-filtering-based-on-second-dataframe
