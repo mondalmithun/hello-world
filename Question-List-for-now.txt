@@ -1099,6 +1099,13 @@ https://www.cloudera.com/documentation/enterprise/5-5-x/topics/spark_develop_run
 https://github.com/vaquarkhan/vk-wiki-notes/wiki/Developing-Apache-Spark-Java-Applications-on-Eclipse
 
 Java with dataframe
+
+RDD VS Dataframe VS DataSet
+https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html
+https://www.linkedin.com/pulse/apache-spark-rdd-vs-dataframe-dataset-chandan-prakash
+http://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
+
 https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedUntypedAggregation.java
 https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedTypedAggregation.java
 https://stackoverflow.com/questions/34302547/dataframe-filtering-based-on-second-dataframe
+
