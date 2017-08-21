@@ -1145,3 +1145,8 @@ Once driver program is finished, blockManager stops，the cached RDD is deleted 
 While Checkpoint persists RDD to local folder/HDFS,  this RDD can be reused by the other driver program.
 Reference:
 The contents of this article are from https://github.com/JerryLead/SparkInternals
+
+Off/on Heap memory and tungsten: --need to read *****
+https://community.hortonworks.com/articles/72502/what-is-tungsten-for-apache-spark.html
+https://stackoverflow.com/questions/43330902/spark-off-heap-memory-config-and-tungsten/43633371
+https://www.youtube.com/watch?v=5ajs8EIPWGI&feature=youtu.be&t=22m43s
