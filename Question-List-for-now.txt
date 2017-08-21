@@ -1113,6 +1113,13 @@ https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/sp
 https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedTypedAggregation.java
 https://stackoverflow.com/questions/34302547/dataframe-filtering-based-on-second-dataframe
 
+Why Would I Use a Checkpoint?
+Basically, I use a checkpoint if I want to freeze the content of my data frame before I do something else. It can be in the scenario of iterative algorithms (as mentioned in the Javadoc) but also in recursive algorithms or simply branching out a data frame to run different kinds of analytics on both.
+
+Spark has been offering checkpoints on streaming since earlier versions (at least v1.2.0), but checkpoints on data frames are a different beast.
+Eager Checkpoint - catalize optimization is done for the lineage create newly after checkpointed lineage only
+Non-Eager Checkpoint - catalize optimization is done for while lineage 
+
 Cache vs checkpoint
 https://stackoverflow.com/questions/35127720/what-is-the-difference-between-spark-checkpoint-and-persist-to-a-disk
 https://dzone.com/articles/what-are-spark-checkpoints-on-dataframes
