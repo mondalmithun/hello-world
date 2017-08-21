@@ -1113,3 +1113,28 @@ https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/sp
 https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedTypedAggregation.java
 https://stackoverflow.com/questions/34302547/dataframe-filtering-based-on-second-dataframe
 
+Cache vs checkpoint
+https://stackoverflow.com/questions/35127720/what-is-the-difference-between-spark-checkpoint-and-persist-to-a-disk
+https://dzone.com/articles/what-are-spark-checkpoints-on-dataframes
+http://alvincjin.blogspot.com/2014/12/cache-vs-checkpoint-in-spark.html
+
+Cache v.s. Checkpoint in Spark
+
+1. RDD.cache v.s Checkpoint
+Cache commands indicate that spark needs to keep these rdd’s in memory. This will not cause the RDD to be instantly be cached, instead it will be cached the next time it is loaded into memory.
+
+Checkpoint process:
+Initialized --> marked for checkpointing --> checkpointing in progress --> checkpointed
+
+(1) Cache materializes the RDD and keeps it in memory. But the lineage of RDD (that is, seq of operations that generated the RDD) will be remembered, so that if there are node failures and parts of the cached RDDs are lost, they can be regenerated. 
+However, checkpoint saves the RDD to an HDFS file and actually forgets the lineage completely. This is allows long lineages to be truncated and the data to be saved reliably in HDFS (which is naturally fault tolerant by replication).
+(2) A partition is directly cached in memory. However, checkpoint has to wait for the current job finishes, then start another job(finalRDD.doCheckpoint()) to finish the persistent.
+This means a checkpointed RDD will be computed twice. Therefore, suggest to add rdd.cache() before rdd.checkpoint(). This will make the checkpoint read rdd from memory then write into disk.
+
+2. RDD.persist v.s Checkpoint
+
+Although RDD.persist can persist RDD on disk，but this partition is managed by blockManager.
+Once driver program is finished, blockManager stops，the cached RDD is deleted from disk(the local folder of blockManager is deleted).
+While Checkpoint persists RDD to local folder/HDFS,  this RDD can be reused by the other driver program.
+Reference:
+The contents of this article are from https://github.com/JerryLead/SparkInternals
