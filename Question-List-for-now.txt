@@ -72,6 +72,7 @@ ARCHITECTURE:
 		added 2017
 		https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
 		https://dzone.com/articles/design-patterns-decorator
+		https://dzone.com/articles/factory-method-vs-abstract
 		
 		
 		
