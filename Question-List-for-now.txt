@@ -806,7 +806,7 @@ CORE JAVA:
 		http://www.journaldev.com/1034/java-blockingqueue-example-implementing-producer-consumer-problem
 		http://www.javacodegeeks.com/2012/05/solving-producer-consumer-problem-in.html
 		
-		added in 2017
+Added in 2017
 		https://dzone.com/articles/producer-consumer-design
 		https://www.javacodegeeks.com/2012/05/solving-producer-consumer-problem-in.html
 
@@ -818,6 +818,8 @@ CORE JAVA:
 		
 		http://crunchify.com/hashmap-vs-concurrenthashmap-vs-synchronizedmap-how-a-hashmap-can-be-synchronized-in-java/		
 		http://javahungry.blogspot.com/2014/02/hashmap-vs-concurrenthashmap-java-collections-interview-question.html
+		https://stackoverflow.com/questions/1055243/is-a-java-hashmap-really-o1
+		
 		
 		Disadvantage of concurrenthashmap
 		http://apurvagnihotri.blogspot.com/2010/06/hashmap-vs-hashtable.html
