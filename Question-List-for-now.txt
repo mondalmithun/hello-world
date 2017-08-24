@@ -73,6 +73,7 @@ ARCHITECTURE:
 		https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
 		https://dzone.com/articles/design-patterns-decorator
 		https://dzone.com/articles/factory-method-vs-abstract
+		https://stackoverflow.com/questions/5739611/differences-between-abstract-factory-pattern-and-factory-method
 		
 		
 		
