@@ -1157,3 +1157,12 @@ Off/on Heap memory and tungsten: --need to read *****
 https://community.hortonworks.com/articles/72502/what-is-tungsten-for-apache-spark.html
 https://stackoverflow.com/questions/43330902/spark-off-heap-memory-config-and-tungsten/43633371
 https://www.youtube.com/watch?v=5ajs8EIPWGI&feature=youtu.be&t=22m43s
+
+Java 8:
+http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
+http://blog.takipi.com/15-must-read-java-8-tutorials/
+http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
+http://www.lambdafaq.org/what-is-a-lambda-expression/
+http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764?pgno=3
+https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx
+https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/
