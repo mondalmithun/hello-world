@@ -1162,7 +1162,8 @@ Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
 http://blog.takipi.com/15-must-read-java-8-tutorials/
 http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
-http://www.lambdafaq.org/what-is-a-lambda-expression/
-http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764?pgno=3
+http://www.lambdafaq.org/what-is-a-lambda-expression/ **
+http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764?pgno=3 **
 https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx
 https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/
+http://www.copypasteisforword.com/notes/lambda-expressions-in-java ***
