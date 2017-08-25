@@ -1039,6 +1039,7 @@ https://en.wikipedia.org/wiki/OpenStack
 
 
 Hadoop :
+https://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html ****
 https://developer.yahoo.com/hadoop/tutorial/
 
 http://4hadooper.blogspot.com/2014/03/ccd-410-questions.html
