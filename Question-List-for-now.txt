@@ -1077,6 +1077,22 @@ https://www.edureka.co/blog/apache-spark-combinebykey-explained **
 http://codingjunkie.net/spark-combine-by-key/ ***
 http://apache-spark-user-list.1001560.n3.nabble.com/aggregateByKey-vs-combineByKey-td15321.html
 
+Combine by key and mapvalue/reducebykey example :
+
+Python code : 
+1> Much efficient >>
+sumCount = nums.combineByKey(
+(lambda x: (x,1)),
+(lambda x, y: (x[0] + y, x[1] + 1)),
+(lambda x, y: (x[0] + y[0], x[1] + y[1]))) 
+avgByKey = sumCount.map(lambda key, xy: (key, xy[0]/xy[1])).collectAsMap()
+
+2>
+sumCountByKey = nums.mapValues(X -> (X,1)).reduceByKey( (X,Y) -> (X[0] + Y[0] ,X[1] + Y[1])
+avgByKey = sumCount.mapValues(X -> X[0]/X[1]).collectAsMap()
+
+
+
 https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-transformations.html
 https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-shuffle.html
 https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-lineage.html
