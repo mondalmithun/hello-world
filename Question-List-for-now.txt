@@ -1051,7 +1051,9 @@ machine learning : https://medium.com/machine-learnings/a-humans-guide-to-machin
 				   https://dzone.com/articles/understanding-machine-learning
 				   
 				   https://dzone.com/big-data-analytics-tutorials-tools-news/list
-				   https://dzone.com/articles/data-analysis-using-apache-hive-and-apache-pig?edition=317400&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202017-08-18
+				   
+HIVE :	
+https://dzone.com/articles/data-analysis-using-apache-hive-and-apache-pig?edition=317400&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202017-08-18
 -------------------	
 
 Spark 1.6 or 2.0
