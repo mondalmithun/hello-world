@@ -1058,6 +1058,8 @@ https://dzone.com/articles/data-analysis-using-apache-hive-and-apache-pig?editio
 
 Spark 1.6 or 2.0
 ------------------
+http://data-flair.training/blogs/how-apache-spark-works/
+http://data-flair.training/blogs/dag-in-apache-spark/
 
 6-22-2017
 
@@ -1103,6 +1105,20 @@ https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-dagscheduler.htm
 https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html
 
 http://backtobazics.com/big-data/spark/apache-spark-rdd-operations-transformation-and-action/
+
+Why Spark is Lazy &advantage:
+http://data-flair.training/forums/topic/why-transformation-is-lazy-in-spark
+http://data-flair.training/blogs/apache-spark-lazy-evaluation/
+
+spark miscellenious :
+http://data-flair.training/forums/topic/textfile-vs-wholetextfile-in-spark
+http://data-flair.training/forums/topic/what-are-the-common-faults-of-developer-while-using-apache-spark
+http://data-flair.training/forums/topic/what-is-parquet-file-format-in-spark
+http://data-flair.training/forums/topic/how-does-apache-spark-handles-accumulated-meta-data
+
+
+
+
 
 
 http://www.guru99.com/mongodb-tutorials.html
