@@ -571,7 +571,9 @@ You can use -XX:+UseCompressedOops to use the same memory footprint (it uses 35-
 
     Java 8 memeory model:
 	https://stackoverflow.com/questions/20563047/jdk-8-memory-layout-and-garbage-collection
+	http://java-latte.blogspot.in/2014/03/metaspace-in-java-8.html
 	
+	check all the thread related topics from the above blog
 	
 		
 	
