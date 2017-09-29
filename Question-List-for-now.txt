@@ -109,6 +109,18 @@ SPRING:
 	http://www.mkyong.com/tutorials/spring-tutorials/
 	http://www.tutorialspoint.com/spring/index.htm
 	http://javarevisited.blogspot.sg/2011/09/spring-interview-questions-answers-j2ee.html
+	Following steps explain their life cycle inside the container.
+1. The container will look the bean definition inside configuration file (e.g. bean.xml).
+2 using reflection container will create the object and if any property is defined inside the bean definition then it will also be set.
+3. If the bean implements the BeanNameAware interface, the factory calls setBeanName() passing the bean’s ID.
+4. If the bean implements the BeanFactoryAware interface, the factory calls setBeanFactory(), passing an instance of itself.
+5. If there are any BeanPostProcessors associated with the bean, their post- ProcessBeforeInitialization() methods will be called before the properties for the Bean are set.
+6. If an init() method is specified for the bean, it will be called.
+7. If the Bean class implements the DisposableBean interface, then the method destroy() will be called when the Application no longer needs the bean reference.
+8. If the Bean definition in the Configuration file contains a 'destroy-method' attribute, then the corresponding method definition in the Bean class will be called.
+
+
+Read more: http://javarevisited.blogspot.com/2011/09/spring-interview-questions-answers-j2ee.html#ixzz4u5JQgYZ3
 	MVC:http://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm
 	Security:
 		http://javarevisited.blogspot.com/2012/03/spring-security-example-tutorial-how-to.html
@@ -511,6 +523,20 @@ added in 2017:
   https://dzone.com/articles/java-7-hashmap-vs?fromrel=true
   https://dzone.com/articles/hard-rocking-with-interface-segregation-principle?fromrel=true
   https://dzone.com/articles/hashing-implementation-using-javautilobjects
+  
+  
+  
+  http://java-latte.blogspot.in/2014/03/metaspace-in-java-8.html
+  http://java-latte.blogspot.in/p/concurrency.html
+  http://java-latte.blogspot.in/search/label/ArrayBlockingQueue%20in%20java
+  http://java-latte.blogspot.in/2013/10/linkedblockingdeque-in-java.html
+  http://java-latte.blogspot.in/2013/09/semaphore-vs-countdownlatch-in-java.html
+  http://java-latte.blogspot.in/2013/10/cyclicbarrier-vs-countdownlatch-in-java.html
+  http://java-latte.blogspot.in/2013/08/basic-of-thread-in-java.html
+  http://java-latte.blogspot.in/2012/09/what-is-countdownlatch-in-java_4123.html
+  http://java-latte.blogspot.in/2013/09/semaphore-in-java-concurrency.html
+  http://java-latte.blogspot.in/2013/10/cyclicbarrier-in-java-concurrency.html
+  
   
 
 
