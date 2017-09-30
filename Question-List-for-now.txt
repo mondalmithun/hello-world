@@ -1091,6 +1091,8 @@ Spark 1.6 or 2.0
 ------------------
 http://data-flair.training/blogs/how-apache-spark-works/
 http://data-flair.training/blogs/dag-in-apache-spark/
+http://data-flair.training/blogs/apache-spark-lazy-evaluation/
+http://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
 
 6-22-2017
 
