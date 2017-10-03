@@ -1107,6 +1107,10 @@ http://data-flair.training/blogs/dag-in-apache-spark/
 http://data-flair.training/blogs/apache-spark-performance-tuning/
 http://data-flair.training/blogs/spark-sql-optimization-catalyst-optimizer/
 
+Managing Spark Partitions with Coalesce and Repartition :
+https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
+Managing Spark Partitions with Coalesce and Repartition
+
 
 Accumulator :
 https://sparkour.urizone.net/recipes/aggregating-accumulators/
