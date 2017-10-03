@@ -1,5 +1,6 @@
 RRAS - PROFILED_ACT is the largest table and has more than 400+ columns and 50-75M records
 In Prod : we have 250+ nodes 2500+ vCores => 10 core/CPU per node.
+Monthly data submission size esitmated 3-4TB
 
 GENERAL BUT IMPORTANT:
 -------------------
