@@ -1094,6 +1094,21 @@ http://data-flair.training/blogs/dag-in-apache-spark/
 http://data-flair.training/blogs/apache-spark-lazy-evaluation/
 http://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
 
+Spark essentials :
+http://data-flair.training/blogs/learn-apache-spark-sparkcontext/
+http://data-flair.training/blogs/spark-rdd-operations-transformations-actions/
+http://data-flair.training/blogs/apache-spark-cluster-managers-tutorial/
+http://data-flair.training/blogs/how-apache-spark-works/
+http://data-flair.training/blogs/dag-in-apache-spark/
+http://data-flair.training/blogs/apache-spark-performance-tuning/
+http://data-flair.training/blogs/spark-sql-optimization-catalyst-optimizer/
+
+
+Accumulator :
+https://sparkour.urizone.net/recipes/aggregating-accumulators/
+https://github.com/databricks/learning-spark/blob/master/src/main/java/com/oreilly/learningsparkexamples/java/ChapterSixExample.java
+
+
 6-22-2017
 
 https://www.quora.com/What-if-a-spark-context-dies-in-Apache-Spark-Is-this-a-single-point-of-failure-or-will-the-program-come-to-a-halt
