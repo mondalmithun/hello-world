@@ -1071,6 +1071,15 @@ https://en.wikipedia.org/wiki/OpenStack
 
 
 Hadoop :
+
+Map Reduce :
+
+Finding top-N >>>>
+http://kamalnandan.com/hadoop/how-to-find-top-n-values-using-map-reduce/
+http://timepasstechies.com/mapreduce-topn/
+
+https://dzone.com/articles/when-to-use-abstract-class-and-intreface
+
 https://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html ****
 https://developer.yahoo.com/hadoop/tutorial/
 
