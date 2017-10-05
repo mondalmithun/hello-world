@@ -1078,6 +1078,9 @@ Finding top-N >>>>
 http://kamalnandan.com/hadoop/how-to-find-top-n-values-using-map-reduce/
 http://timepasstechies.com/mapreduce-topn/
 
+LeftOuter Join : 
+https://blog.matthewrathbone.com/2013/02/09/real-world-hadoop-implementing-a-left-outer-join-in-hadoop-map-reduce.html
+
 https://dzone.com/articles/when-to-use-abstract-class-and-intreface
 
 https://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html ****
