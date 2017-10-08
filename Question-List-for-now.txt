@@ -1124,6 +1124,12 @@ https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/ ***
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4 *****
 Managing Spark Partitions with Coalesce and Repartition
 
+https://acadgild.com/blog/partitioning-in-spark/
+http://hadoop-makeitsimple.blogspot.com/2016/05/custom-partitioner-in-spark.html
+https://www.edureka.co/blog/demystifying-partitioning-in-spark
+
+
+
 
 Accumulator :
 https://sparkour.urizone.net/recipes/aggregating-accumulators/
