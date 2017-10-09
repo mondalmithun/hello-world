@@ -1081,6 +1081,8 @@ http://timepasstechies.com/mapreduce-topn/
 LeftOuter Join : 
 https://blog.matthewrathbone.com/2013/02/09/real-world-hadoop-implementing-a-left-outer-join-in-hadoop-map-reduce.html
 
+https://www.slideshare.net/Hadoop_Summit/bose-june26-405pmroom230cv3-24148869
+
 https://dzone.com/articles/when-to-use-abstract-class-and-intreface
 
 https://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html ****
