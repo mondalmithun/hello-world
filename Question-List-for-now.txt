@@ -1072,6 +1072,13 @@ https://en.wikipedia.org/wiki/OpenStack
 
 Hadoop :
 
+Custome Inputformat: 
+https://shrikantbang.wordpress.com/2013/10/22/hadoop-custom-input-format/
+http://analyticspro.org/2012/08/01/wordcount-with-custom-record-reader-of-textinputformat/
+
+Examples:
+https://github.com/rathboma/hadoop-framework-examples
+
 Map Reduce :
 
 Finding top-N >>>>
@@ -1100,9 +1107,18 @@ machine learning : https://medium.com/machine-learnings/a-humans-guide-to-machin
 				   
 HIVE :	
 https://dzone.com/articles/data-analysis-using-apache-hive-and-apache-pig?edition=317400&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202017-08-18
+https://stackoverflow.com/questions/17810537/how-to-delete-and-update-a-record-in-hive
+https://www.linkedin.com/pulse/20141009083420-4078176-big-data-handling-update-delete-by-leveraging-hive-dynamic-partition?trk=mp-reader-card
+
+https://hortonworks.com/blog/update-hive-tables-easy-way/
 
 ****
 http://data-flair.training/blogs/category/hive/
+
+Large file write issue:
+Parquet:
+https://community.cloudera.com/t5/Advanced-Analytics-Apache-Spark/add-columns-to-hive-parquet-table/m-p/43418
+https://stackoverflow.com/questions/26291165/spark-sql-unable-to-complete-writing-parquet-data-with-a-large-number-of-shards
 -------------------	
 
 Spark 1.6 or 2.0
@@ -1122,6 +1138,7 @@ http://data-flair.training/blogs/apache-spark-performance-tuning/
 http://data-flair.training/blogs/spark-sql-optimization-catalyst-optimizer/
 
 Managing Spark Partitions with Coalesce and Repartition :
+
 https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/ ******
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4 *****
 Managing Spark Partitions with Coalesce and Repartition
@@ -1130,13 +1147,16 @@ https://acadgild.com/blog/partitioning-in-spark/
 http://hadoop-makeitsimple.blogspot.com/2016/05/custom-partitioner-in-spark.html
 https://www.edureka.co/blog/demystifying-partitioning-in-spark
 
-
+Real time streaming:
+https://github.com/caroljmcdonald/mapr-streams-sparkstreaming-hbase/blob/master/src/main/scala/solution/SensorStreamConsumer.scala
 
 
 Accumulator :
 https://sparkour.urizone.net/recipes/aggregating-accumulators/
 https://github.com/databricks/learning-spark/blob/master/src/main/java/com/oreilly/learningsparkexamples/java/ChapterSixExample.java
 
+Spark Dataframe validator example:
+https://github.com/milin-k/spark-daria
 
 6-22-2017
 
