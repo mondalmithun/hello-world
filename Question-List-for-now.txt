@@ -79,6 +79,8 @@ ARCHITECTURE:
 		https://dzone.com/articles/factory-method-vs-abstract
 		https://stackoverflow.com/questions/5739611/differences-between-abstract-factory-pattern-and-factory-method
 		
+		https://www.journaldev.com/1827/java-design-patterns-example-tutorial
+		
 		
 		
 -------------------
@@ -869,7 +871,19 @@ Added in 2017
 		http://www.journaldev.com/1061/java-synchronization-and-thread-safety-tutorial-with-examples
 		
 		http://www.journaldev.com/2377/java-lock-example-and-concurrency-lock-vs-synchronized
+		http://java-latte.blogspot.in/p/concurrency.html ***************
+		
+		http://java-latte.blogspot.in/2014/03/metaspace-in-java-8.html
+		
+		
+		
+		
 		https://dzone.com/articles/how-annotations-work-java
+		
+		
+		
+		
+		
 		
 		**** Special for investment banking...CORE JAVA..
 		stack , hashmap , hashset implementation
@@ -1120,6 +1134,9 @@ Parquet:
 https://community.cloudera.com/t5/Advanced-Analytics-Apache-Spark/add-columns-to-hive-parquet-table/m-p/43418
 https://stackoverflow.com/questions/26291165/spark-sql-unable-to-complete-writing-parquet-data-with-a-large-number-of-shards
 -------------------	
+Oozie:
+https://gist.github.com/airawat/6015793
+
 
 Spark 1.6 or 2.0
 ------------------
