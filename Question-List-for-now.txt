@@ -1171,6 +1171,7 @@ https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-partitions.h
 https://blog.deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
 
 https://datarus.wordpress.com/2015/05/04/fighting-the-skew-in-spark/
+http://bigdatatn.blogspot.com/2017/05/using-spark-with-hbase-and-salted-row.html
 
 
 Real time streaming:
