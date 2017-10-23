@@ -1158,11 +1158,20 @@ Managing Spark Partitions with Coalesce and Repartition :
 
 https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/ ******
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4 *****
-Managing Spark Partitions with Coalesce and Repartition
 
 https://acadgild.com/blog/partitioning-in-spark/
 http://hadoop-makeitsimple.blogspot.com/2016/05/custom-partitioner-in-spark.html
 https://www.edureka.co/blog/demystifying-partitioning-in-spark
+
+Data Skew problem:
+https://www.slideshare.net/cloudera/top-5-mistakes-to-avoid-when-writing-apache-spark-applications *****
+https://community.hortonworks.com/questions/51391/dataframessets-simple-join-is-skewed-due-to-join-c.html
+http://silverpond.com.au/2016/10/06/balancing-spark.html
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-rdd-partitions.html
+https://blog.deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
+
+https://datarus.wordpress.com/2015/05/04/fighting-the-skew-in-spark/
+
 
 Real time streaming:
 https://github.com/caroljmcdonald/mapr-streams-sparkstreaming-hbase/blob/master/src/main/scala/solution/SensorStreamConsumer.scala
