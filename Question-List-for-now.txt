@@ -1133,6 +1133,9 @@ Large file write issue:
 Parquet:
 https://community.cloudera.com/t5/Advanced-Analytics-Apache-Spark/add-columns-to-hive-parquet-table/m-p/43418
 https://stackoverflow.com/questions/26291165/spark-sql-unable-to-complete-writing-parquet-data-with-a-large-number-of-shards
+
+https://www.ellicium.com/orc-parquet-avro/****
+https://www.linkedin.com/pulse/hdfc-storage-data-format-like-avro-vs-parquet-orc-jeetendra-gangele
 -------------------	
 Oozie:
 https://gist.github.com/airawat/6015793
