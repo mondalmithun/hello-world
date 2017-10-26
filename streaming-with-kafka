@@ -11,3 +11,14 @@ https://www.mail-archive.com/dev@spark.incubator.apache.org/msg00531.html
 https://www.confluent.io/blog/stream-data-platform-1/ ****kafka insight 
 
 https://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/
+
+http://aseigneurin.github.io/ ******
+http://aseigneurin.github.io/2016/03/02/kafka-spark-avro-kafka-101.html
+http://aseigneurin.github.io/2016/03/03/kafka-spark-avro-consume-messages-with-spark.html
+http://aseigneurin.github.io/2016/03/04/kafka-spark-avro-producing-and-consuming-avro-messages.html
+
+http://aseigneurin.github.io/2016/11/08/spark-file-formats-and-storage-options.html
+http://aseigneurin.github.io/2016/05/07/spark-kafka-achieving-zero-data-loss.html
+https://www.linkedin.com/pulse/hdfc-storage-data-format-like-avro-vs-parquet-orc-jeetendra-gangele
+https://www.ellicium.com/orc-parquet-avro/
+https://www.confluent.io/blog/avro-kafka-data/
