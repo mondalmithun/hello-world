@@ -1,0 +1,1 @@
+beeline -u "jdbc:hive2://hivehostname:10000/schema_name;principal=hive/_HOST@host.net" -n . -p . -f tmp.sql -hivevar varNmae=varValue
