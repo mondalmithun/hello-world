@@ -1,0 +1,22 @@
+1> Create test.sql file
+
+use schema_name
+select 1;
+
+2> Create the sample workflow xml file  and oozie properties file .  and send the workflow and  SQL file to hdfs cluster
+
+        hadoop fs -put -f test_workflow.xml /user/FID/test_workflow.xml
+        hadoop fs -put -f test.sql /user/FID
+        
+ 3>	. export OOZIE_URL=https://hostnameURL:portnumber/oozie
+4>	Validating a workow   
+
+oozie validate test_workflow.xml
+
+5>	Run the oozie job using the below command and the oozie workflow id will appear on the console
+            
+         oozie job -config test_config.properties -run
+
+6>	 To know the status details of job run below command with the above workflow id 
+            
+          oozie job -info 111111-22222222222222222-oozie-oozi-W
