@@ -1,0 +1,71 @@
+Purpose:- Used to execute sqoop functions from java.
+
+Advantage:
+	Perform single step writeback  process . No need to store data into in-memory maps.
+	On the basis of data size, we can define no of mapper for parallel map reduce job running.
+	Easily manage data between staging table (if use) and destination table. Better to manage staging table because it can help us to provide atomicity.
+	No need to implement pagination because parallelism is doing by map tasks(-m)
+	Once data is staged we check it atomicity, do any required process on those data and write it into the destination table.
+
+Process Flow:
+Step1) Add maven dependency
+  <dependency>
+  <groupId>org.apache.sqoop</groupId>
+    <artifactId>sqoop-client</artifactId>
+    <version>${version}</version>
+</dependency
+
+Step 2) Initialize Sqoop client.
+String url = "https://bdgtmaster02i1d.nam.nsroot.net:12000/sqoop";
+SqoopClient client = new SqoopClient(url);
+
+Step 3) create connection
+MConnection newCon = client.newConnection(1);
+
+//Get connection and framework forms. Set name for connection
+MConnectionForms conForms = newCon.getConnectorPart();
+MConnectionForms frameworkForms = newCon.getFrameworkPart();
+newCon.setName("MyConnection");
+
+//Set connection forms values
+conForms.getStringInput("connection.connectionString").setValue("jdbc:oracle:thin:@// bdgtmaster02i1d.nam.nsroot.net/db");
+conForms.getStringInput("connection.jdbcDriver").setValue("oracle.jdbc.driver.OracleDriver");
+conForms.getStringInput("connection.username").setValue("root");
+conForms.getStringInput("connection.password").setValue("root");
+
+frameworkForms.getIntegerInput("security.maxConnections").setValue(0);
+
+Status status  = client.createConnection(newCon);
+if(status.canProceed()) {
+ System.out.println("Created. New Connection ID : " +newCon.getPersistenceId());
+} else {
+ System.out.println("Check for status and forms error ");
+}
+
+
+Step 4) Write Export job 
+MJob newjob = client.newJob(1, org.apache.sqoop.model.MJob.Type.EXPORT);
+MJobForms connectorForm = newjob.getConnectorPart();
+MJobForms frameworkForm = newjob.getFrameworkPart();
+
+newjob.setName("ExportJob");
+//Database configuration
+connectorForm.getStringInput("table.schemaName").setValue("");
+//Input either table name or sql
+connectorForm.getStringInput("table.tableName").setValue("table");
+//connectorForm.getStringInput("table.sql").setValue("select id,name from table where ${CONDITIONS}");
+connectorForm.getStringInput("table.columns").setValue("id,name");
+
+//Input configurations
+frameworkForm.getStringInput("input.inputDirectory").setValue("/input");
+
+//Job resources
+frameworkForm.getIntegerInput("throttling.extractors").setValue(1);
+frameworkForm.getIntegerInput("throttling.loaders").setValue(1);
+
+Status status = client.createJob(newjob);
+if(status.canProceed()) {
+  System.out.println("New Job ID: "+ newjob.getPersistenceId());
+} else {
+  System.out.println("Check for status and forms error ");
+}
