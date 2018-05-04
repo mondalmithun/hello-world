@@ -1,5 +1,6 @@
 
 
+
 http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
 http://blog.takipi.com/15-must-read-java-8-tutorials/
 http://blog.takipi.com/compiling-lambda-expressions-scala-vs-java-8/
@@ -23,6 +24,12 @@ Added in 2017
   
     parallelism
         https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html
+
+Group By :
+http://www.baeldung.com/java-groupingby-collector
+https://www.mkyong.com/java8/java-8-collectors-groupingby-and-mapping-example/
+https://stackoverflow.com/questions/37984384/aggregate-list-of-objects-in-java?rq=1
+https://stackoverflow.com/questions/24577328/aggregate-listx-to-listx-with-java-8-stream-api
   
   Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
