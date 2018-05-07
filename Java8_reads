@@ -1,7 +1,4 @@
 
-
-
-
 http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
 http://blog.takipi.com/15-must-read-java-8-tutorials/
 http://blog.takipi.com/compiling-lambda-expressions-scala-vs-java-8/
@@ -38,7 +35,14 @@ https://stackoverflow.com/questions/21020562/aggregate-functions-over-a-list-in-
 
 https://stackoverflow.com/questions/28342814/group-by-multiple-field-names-in-java-8
 ********
+
+http://www.baeldung.com/java-8-collectors
+https://www.javacodegeeks.com/2016/03/multi-level-grouping-streams.html
+
+Multi level collector:
+https://stackoverflow.com/questions/32071726/java-8-stream-groupingby-with-multiple-collectors
 https://dzone.com/articles/how-translate-sql-group-and
+
 
   
 https://stackoverflow.com/questions/22989806/find-the-most-common-string-in-arraylist/22990086
