@@ -43,6 +43,9 @@ Multi level collector:
 https://stackoverflow.com/questions/32071726/java-8-stream-groupingby-with-multiple-collectors
 https://dzone.com/articles/how-translate-sql-group-and
 
+Multi aggregator:
+https://stackoverflow.com/questions/44942493/multiple-aggregate-functions-in-java-8-stream-api ***
+https://stackoverflow.com/questions/35407001/stream-a-collection-and-collect-into-multiple-results-depending-on-independent-p
 
   
 https://stackoverflow.com/questions/22989806/find-the-most-common-string-in-arraylist/22990086
