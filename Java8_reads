@@ -32,7 +32,7 @@ https://stackoverflow.com/questions/24577328/aggregate-listx-to-listx-with-java-
 http://javarevisited.blogspot.com/2015/07/how-to-do-group-by-in-java-8.html
 https://stackoverflow.com/questions/22753755/how-to-add-elements-of-a-java8-stream-into-an-existing-list
 https://stackoverflow.com/questions/21020562/aggregate-functions-over-a-list-in-java
-
+http://www.deadcoderising.com/2017-02-21-java-8-accumulate-your-streams-using-collectors/
 https://stackoverflow.com/questions/28342814/group-by-multiple-field-names-in-java-8
 ********
 
@@ -46,7 +46,82 @@ https://dzone.com/articles/how-translate-sql-group-and
 Multi aggregator:
 https://stackoverflow.com/questions/44942493/multiple-aggregate-functions-in-java-8-stream-api ***
 https://stackoverflow.com/questions/35407001/stream-a-collection-and-collect-into-multiple-results-depending-on-independent-p
+https://stackoverflow.com/questions/31706699/combine-stream-of-collections-into-one-collection-java-8
 
+
+distinct sum"
+https://stackoverflow.com/questions/46356688/java-8-streams-sum-values-on-a-distinct-key
+  
+https://stackoverflow.com/questions/22989806/find-the-most-common-string-in-arraylist/22990086
+https://www.mkyong.com/java8/java-8-streams-filter-examples/
+
+  Java 8:
+http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
+http://blog.takipi.com/15-must-read-java-8-tutorials/
+http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
+http://www.lambdafaq.org/what-is-a-lambda-expression/ **
+http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764?pgno=3 **
+https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx
+https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/
+http://www.copypasteisforword.com/notes/lambda-expressions-in-java ***
+
+
+http://javarevisited.blogspot.com/2013/11/java-8-tutorials-resources-and-examples-lambda-expression-stream-api-functional-interfaces.html
+http://javarevisited.blogspot.com/2017/04/10-examples-of-optional-in-java-8.html
+http://javarevisited.blogspot.sg/2016/03/difference-between-map-and-flatmap-in-java8.html
+
+http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
+http://blog.takipi.com/15-must-read-java-8-tutorials/
+http://blog.takipi.com/compiling-lambda-expressions-scala-vs-java-8/
+winterbe.com/posts/2014/03/16/java-8-tutorial/
+http://www.journaldev.com/2389/java-8-features-with-examples
+http://www.mkyong.com/tutorials/java-8-tutorials/
+
+
+Added in 2017 
+	
+	Java 8
+	https://glenware.wordpress.com/2017/02/07/java-8-streams-cookbook/?
+	https://flyingbytes.github.io/programming/java8/functional/part3/2017/02/18/Java8-Part3.html
+	https://glenware.wordpress.com/2017/02/05/how-lambdas-and-anonymous-inner-classesaic-work/
+	
+	https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood
+	
+	https://flyingbytes.github.io/programming/java8/functional/part1/2017/01/23/Java8-Part1.html
+	https://blog-rmannibucau.rhcloud.com/#/post/java-stream-error-handling
+https://dzone.com/articles/java-collections-part-1?edition=273883&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=dd%202017-03-03
+  
+    parallelism
+        https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html
+
+Group By :
+https://docs.oracle.com/javase/tutorial/collections/streams/
+http://www.baeldung.com/java-groupingby-collector
+https://www.mkyong.com/java8/java-8-collectors-groupingby-and-mapping-example/
+https://stackoverflow.com/questions/37984384/aggregate-list-of-objects-in-java?rq=1
+https://stackoverflow.com/questions/24577328/aggregate-listx-to-listx-with-java-8-stream-api
+http://javarevisited.blogspot.com/2015/07/how-to-do-group-by-in-java-8.html
+https://stackoverflow.com/questions/22753755/how-to-add-elements-of-a-java8-stream-into-an-existing-list
+https://stackoverflow.com/questions/21020562/aggregate-functions-over-a-list-in-java
+http://www.deadcoderising.com/2017-02-21-java-8-accumulate-your-streams-using-collectors/
+https://stackoverflow.com/questions/28342814/group-by-multiple-field-names-in-java-8
+********
+
+http://www.baeldung.com/java-8-collectors
+https://www.javacodegeeks.com/2016/03/multi-level-grouping-streams.html
+
+Multi level collector:
+https://stackoverflow.com/questions/32071726/java-8-stream-groupingby-with-multiple-collectors
+https://dzone.com/articles/how-translate-sql-group-and
+
+Multi aggregator:
+https://stackoverflow.com/questions/44942493/multiple-aggregate-functions-in-java-8-stream-api ***
+https://stackoverflow.com/questions/35407001/stream-a-collection-and-collect-into-multiple-results-depending-on-independent-p
+https://stackoverflow.com/questions/31706699/combine-stream-of-collections-into-one-collection-java-8
+
+
+distinct sum"
+https://stackoverflow.com/questions/46356688/java-8-streams-sum-values-on-a-distinct-key
   
 https://stackoverflow.com/questions/22989806/find-the-most-common-string-in-arraylist/22990086
 https://www.mkyong.com/java8/java-8-streams-filter-examples/
