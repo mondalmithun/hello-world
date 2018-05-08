@@ -23,6 +23,10 @@ Added in 2017
     parallelism
         https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html
 
+Added in 2018:
+https://www.logicbig.com/tutorials/core-java-tutorial/java-util-stream/stateful-vs-stateless.html
+http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
+
 Group By :
 https://docs.oracle.com/javase/tutorial/collections/streams/
 http://www.baeldung.com/java-groupingby-collector
@@ -47,7 +51,7 @@ Multi aggregator:
 https://stackoverflow.com/questions/44942493/multiple-aggregate-functions-in-java-8-stream-api ***
 https://stackoverflow.com/questions/35407001/stream-a-collection-and-collect-into-multiple-results-depending-on-independent-p
 https://stackoverflow.com/questions/31706699/combine-stream-of-collections-into-one-collection-java-8
-
+A
 
 distinct sum"
 https://stackoverflow.com/questions/46356688/java-8-streams-sum-values-on-a-distinct-key
