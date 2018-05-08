@@ -55,8 +55,7 @@ https://stackoverflow.com/questions/46356688/java-8-streams-sum-values-on-a-dist
 https://stackoverflow.com/questions/22989806/find-the-most-common-string-in-arraylist/22990086
 https://www.mkyong.com/java8/java-8-streams-filter-examples/
 
-  Java 8:
-http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
+  Java 8:http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
 http://blog.takipi.com/15-must-read-java-8-tutorials/
 http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
 http://www.lambdafaq.org/what-is-a-lambda-expression/ **
@@ -66,7 +65,7 @@ https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-w
 http://www.copypasteisforword.com/notes/lambda-expressions-in-java ***
 
 
-http://javarevisited.blogspot.com/2013/11/java-8-tutorials-resources-and-examples-lambda-expression-stream-api-functional-interfaces.html
+Chttp://javarevisited.blogspot.com/2013/11/java-8-tutorials-resources-and-examples-lambda-expression-stream-api-functional-interfaces.html
 http://javarevisited.blogspot.com/2017/04/10-examples-of-optional-in-java-8.html
 http://javarevisited.blogspot.sg/2016/03/difference-between-map-and-flatmap-in-java8.html
 
@@ -119,6 +118,8 @@ https://stackoverflow.com/questions/44942493/multiple-aggregate-functions-in-jav
 https://stackoverflow.com/questions/35407001/stream-a-collection-and-collect-into-multiple-results-depending-on-independent-p
 https://stackoverflow.com/questions/31706699/combine-stream-of-collections-into-one-collection-java-8
 
+custom collector:
+https://stackoverflow.com/questions/30282700/java-8-stream-map-and-count-distinct
 
 distinct sum"
 https://stackoverflow.com/questions/46356688/java-8-streams-sum-values-on-a-distinct-key
