@@ -1,4 +1,5 @@
 
+
 http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
 http://blog.takipi.com/15-must-read-java-8-tutorials/
 http://blog.takipi.com/compiling-lambda-expressions-scala-vs-java-8/
@@ -51,7 +52,9 @@ Multi aggregator:
 https://stackoverflow.com/questions/44942493/multiple-aggregate-functions-in-java-8-stream-api ***
 https://stackoverflow.com/questions/35407001/stream-a-collection-and-collect-into-multiple-results-depending-on-independent-p
 https://stackoverflow.com/questions/31706699/combine-stream-of-collections-into-one-collection-java-8
-A
+
+https://stackoverflow.com/questions/47427762/get-unique-user-defined-objects-from-two-java-lists-using-java8
+
 
 distinct sum"
 https://stackoverflow.com/questions/46356688/java-8-streams-sum-values-on-a-distinct-key
