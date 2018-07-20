@@ -1259,6 +1259,7 @@ http://www.focusedsupport.com/blog/analytics-using-spark-and-mongo/
 https://www.mongodb.com/blog/post/tutorial-for-operationalizing-spark-with-mongodb
 https://github.com/plaa/mongo-spark/blob/master/src/main/java/JavaWordCount.java
 
+
 Guice :
 http://www.journaldev.com/2403/google-guice-dependency-injection-example-tutorial
 http://www.journaldev.com/2394/java-dependency-injection-design-pattern-example-tutorial
@@ -1268,6 +1269,7 @@ http://www.journaldev.com/8079/scala-tuples-and-maps-example
 
 
 http://coe4bd.github.io/HadoopHowTo/sparkJava/sparkJava.html
+
 https://www.cloudera.com/documentation/enterprise/5-5-x/topics/spark_develop_run.html
 https://github.com/vaquarkhan/vk-wiki-notes/wiki/Developing-Apache-Spark-Java-Applications-on-Eclipse
 
@@ -1319,6 +1321,14 @@ Off/on Heap memory and tungsten: --need to read *****
 https://community.hortonworks.com/articles/72502/what-is-tungsten-for-apache-spark.html
 https://stackoverflow.com/questions/43330902/spark-off-heap-memory-config-and-tungsten/43633371
 https://www.youtube.com/watch?v=5ajs8EIPWGI&feature=youtu.be&t=22m43s
+
+7-20-2018
+https://databricks.com/blog/2015/04/28/project-tungsten-bringing-spark-closer-to-bare-metal.html
+https://typelevel.org/frameless/TypedDatasetVsSparkDataset.html
+https://image.slidesharecdn.com/advancedapachesparkmeetup-projecttungsten-nov122015-151113030443-lva1-app6891/95/advanced-apache-spark-meetup-project-tungsten-nov-12-2015-56-638.jpg?cb=1447384119
+
+
+
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
