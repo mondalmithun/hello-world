@@ -122,4 +122,8 @@ docker run -it --entrypoint "bash" containerID
 bash for running tomcat container
 ------------------------------------------------------------
 docker exec -it  containerID  "bash"
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+curl -H "Content-type: application/json" -X POST "http://loclhost:8080/web-application-service-endpoint" -d '{"id":"X",
+"company_code":"sample copmp",
+"description":"rsu fica xmpt"}'
