@@ -109,7 +109,17 @@ elastic search..project
   217  docker ps -a
   218  docker stop mysql-test
 
++++++++++++++++++++Docker with tomcat container+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+docker ps -a --last 10
+docker build -t image_name .
+docker run -d -p 8080:8080 image_name
+Stopped tomcat container
+-------------------------------------------------
+docker run -it --entrypoint "bash" containerID
 
+bash for running tomcat container
+------------------------------------------------------------
+docker exec -it  containerID  "bash"
 
