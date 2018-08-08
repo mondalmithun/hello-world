@@ -1,0 +1,134 @@
+Done :
+
+Lending club analysis...
+
+cheetsheets:
+
+https://www.datacamp.com/community/blog/python-pandas-cheat-sheet
+https://towardsdatascience.com/collecting-data-science-cheat-sheets-d2cdff092855
+https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://towardsdatascience.com/citi-bike-2017-analysis-efd298e6c22c
+https://github.com/vinit28/CitibikeAnalysis
+https://towardsdatascience.com/citi-bike-2017-analysis-efd298e6c22c  
+   data - https://s3.amazonaws.com/tripdata/index.html
+   https://github.com/vinit28/CitibikeAnalysis/blob/master/VinitShah_Capstone_DataScience.ipynb
+
+   
+5  2018-07-19 11:39:34 curl -O "https://s3.amazonaws.com/tripdata/2017[01-12]-citibike-tripdata.csv.zip"
+    6  2018-07-19 11:39:58 ls -lrt
+	 unzip '*.zip'
+	  cat *.csv > ../2017.csv
+
+	  
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------------------------
+https://www.datascience.com/blog/data-science-vision-zero-traffic-fatalities-in-los-angeles
+https://github.com/benvandyke/us-traffic-fatalities
+https://data.world/nhtsa/fars-data
+http://www.nber.org/fars/ftp.nhtsa.dot.gov/FARS/2015/National/
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TO DO :
+
+
+
+https://towardsdatascience.com/data-engineers-are-there-did-you-see-them-9b6452e92b23
+
+
+https://towardsdatascience.com/tagged/data-analysis
+
+
+https://towardsdatascience.com/predicting-employee-turnover-7ab2b9ecf47e --data ?? link broken
+https://towardsdatascience.com/5-data-science-project-every-e-commerce-company-should-do-8746c5ab4604
+https://towardsdatascience.com/customizing-plots-with-python-matplotlib-bcf02691931f
+https://towardsdatascience.com/hospital-ratings-basic-medical-data-exploration-visualization-8923cf33b14c
+https://towardsdatascience.com/the-art-of-deduction-featuring-pandas-and-python-a61dbb622986
+https://medium.freecodecamp.org/what-i-learned-from-analyzing-more-than-80-job-rejections-with-python-11044ee6927b
+
+
+
+https://towardsdatascience.com/deploying-keras-deep-learning-models-with-flask-5da4181436a2
+
+
+
+Titanic data....
+
+https://www.kaggle.com/niklasdonges/end-to-end-project-with-python
+https://www.kaggle.com/startupsci/titanic-data-science-solutions
+https://www.kaggle.com/ldfreeman3/a-data-science-framework-to-achieve-99-accuracy
+https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python
+
+8/6/2018---------
+
+https://towardsdatascience.com/5-resources-to-inspire-your-next-data-science-project-ea6afbe20319
+
+Python for data science
+https://www.dataquest.io/blog/introduction-functional-programming-python/
+https://towardsdatascience.com/python-for-data-science-part-1-759524eb493b
+https://towardsdatascience.com/python-for-data-science-part-2-373d6473fa40
+
+
+https://towardsdatascience.com/@actsusanli
+https://github.com/susanli2016/Python-Code
+https://towardsdatascience.com/what-i-learned-from-analyzing-and-visualizing-traffic-accidents-data-7cd080a15c15
+https://github.com/susanli2016/Machine-Learning-with-AndrewNg
+https://github.com/susanli2016/Data-Analysis-with-Python/blob/master/33%20Years%20Immigration%20to%20the%20USA.ipynb
+https://github.com/susanli2016/Data-Analysis-with-Python/blob/master/Wrangle%20OpenStreetMap%20Using%20Python%20and%20SQL.ipynb
+https://towardsdatascience.com/text-analytics-is-not-rocket-science-learn-them-now-7-text-analytics-courses-to-start-8860df51a9e1
+https://towardsdatascience.com/master-the-skill-of-text-analytics-and-be-successful-87ad4a7dfcb0
+
+
+
+8/7/2018---------
+https://www.datascience.com/blog/introduction-to-correlation-learn-data-science-tutorials
+https://towardsdatascience.com/data-correlation-can-make-or-break-your-machine-learning-project-82ee11039cc9
+
+https://towardsdatascience.com/scraping-tripadvisor-text-mining-and-sentiment-analysis-for-hotel-reviews-cc4e20aef333
+https://towardsdatascience.com/predicting-hotel-bookings-with-user-search-parameters-8c570ab24805
+https://github.com/susanli2016/Machine-Learning-with-Python/blob/master/Predict%20hotel%20booking.ipynb
+
+
+https://towardsdatascience.com/visualizing-beethovens-oeuvre-part-i-scraping-and-cleaning-data-from-imslp-77ecb124002d
+https://github.com/mzhang13/visualizing_beethoven_oeuvre/blob/master/scrape_clean_data.ipynb
+
+
+https://medium.com/@GusData/data-preprocessing-or-food-preparing-ec4849a4ecf2
+
+https://medium.com/@janeyin600
+https://medium.com/@janeyin600/use-one-hot-encoding-to-analyze-adult-income-data-and-some-bad-news-for-the-single-people-in-the-cef71f9d47b4
+https://github.com/janeyin600/Machine_learning_projects/blob/master/adult_income_predictions/Adult_income_predictions.ipynb
+
+
+https://medium.com/@janeyin600/machine-learning-the-myth-of-titanic-ac90c52ff774
+https://github.com/janeyin600/Machine_learning_projects/blob/master/Titanic_survival_prediction/disaster_survival_prediction.ipynb
+
+
+https://towardsdatascience.com/@pranavbadami
+https://towardsdatascience.com/the-5-stages-of-a-system-breakdown-on-nj-transit-8258127e31e9
+
+
+NLP:
+https://towardsdatascience.com/drake-using-natural-language-processing-to-understand-his-lyrics-49e54ace3662
+https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+In progress...... 
+	  
+
+
+
+https://towardsdatascience.com/analyzing-crime-with-python-8b28252559ce - got data....
+https://www.kaggle.com/currie32/crimes-in-chicago#Chicago_Crimes_2012_to_2017.csv
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+	
+	
