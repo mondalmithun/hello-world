@@ -1,0 +1,8 @@
+https://data36.com/sql-data-analysis-advanced-tutorial-ep6/
+https://data36.com/sql-functions-beginners-tutorial-ep3/
+https://data36.com/sql-where-clause-tutorial-beginners-ep2/
+https://data36.com/sql-join-data-analysis-tutorial-ep5/
+
+
+https://www.kaggle.com/dimarudov/data-analysis-using-sql
+https://blog.modeanalytics.com/five-public-dataset/
