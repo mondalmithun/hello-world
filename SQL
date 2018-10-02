@@ -43,4 +43,18 @@ from
     FROM
         anyu table) ign
 
-		
+
+Based on Source data , count records as good and bad  from two tables
+
+select b.source, 
+count(a.employee_guid),
+sum(case when a.home_code like "S%" then 1 else 0 end) as hs,
+sum(case when a.work_code like "S%" then 1 else 0 end) as ws
+from any_address_table as a
+inner join
+any_employee_table as b 
+on a.employee_guid=b.employee_guid and a.yyyymm=b.yyyymm
+where a.yyyymm='201807' and (a.home_code is not null or a.work_code is not null)
+group by b.source
+order by b.source 
+
