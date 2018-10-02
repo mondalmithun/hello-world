@@ -15,7 +15,7 @@ https://www.analyticsvidhya.com/blog/2017/05/questions-sql-for-all-aspiring-data
 
 https://stackoverflow.com/questions/15387808/mysql-join-two-tables-count-and-sum-from-second-table
 
-
+=============================================================================================================
 Getting Top queries ...
 
 select yyyymm,zip, rank() over (partition by a.yyyymm order by a.zip_ct desc ) as rk ,zip_ct
@@ -29,7 +29,7 @@ select yyyymm,zip, rank() over (partition by a.yyyymm order by a.zip_ct desc ) a
 
 															
 															
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 score count good,bad,change, unchanged stat															
 select SUM(case when new_score_lens = '9999' and old_score_lens != '9999' THEN 1 ELSE 0 END) as got_worse,
     SUM(case when new_score_lens != '9999' and old_score_lens = '9999' THEN 1 ELSE 0 END) as got_better,
@@ -43,7 +43,7 @@ from
     FROM
         anyu table) ign
 
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Based on Source data , count records as good and bad  from two tables
 
 select b.source, 
@@ -57,4 +57,39 @@ on a.employee_guid=b.employee_guid and a.yyyymm=b.yyyymm
 where a.yyyymm='201807' and (a.home_code is not null or a.work_code is not null)
 group by b.source
 order by b.source 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+
+*******************#####################################
+To be honest I don’t use the SQL CASE statement too often during my daily job… 
+but sometimes it’s very handy when I have to do some quick and dirty data cleaning/transformation 
+(e.g. change all the values from ‘M’ to ‘Male’ and from ‘F’ to ‘Female’ in a table) or 
+turn a continuous value into a categorical value (like we did in the above example)
+
+-------------------------------------------------------------------------------------------------------
+--we want to see how many planes departed early, late or on time.
+--departed on time 
+SELECT "early" as departure ,COUNT(*)
+FROM flight_delays
+where depdelay < 0
+union
+SELECT "on Time" as departure ,COUNT(*)
+FROM flight_delays
+where depdelay = 0
+union
+SELECT "Dealy" as departure ,COUNT(*)
+FROM flight_delays
+where depdelay > 0;
+
+--OR
+
+select count(*),
+       CASE WHEN depdelay < 0 then 'Early'
+            WHEN depdelay > 0 then 'Dealy'
+            else 'On Time'
+       END as segment
+FROM flight_delays
+group by segment
+
+-------------------------------------------------------------------------------------------------------------
