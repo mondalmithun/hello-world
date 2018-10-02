@@ -6,3 +6,41 @@ https://data36.com/sql-join-data-analysis-tutorial-ep5/
 
 https://www.kaggle.com/dimarudov/data-analysis-using-sql
 https://blog.modeanalytics.com/five-public-dataset/
+
+
+10/2/201/
+https://www.datacamp.com/courses/intro-to-sql-for-data-science
+https://www.udacity.com/course/sql-for-data-analysis--ud198
+https://www.analyticsvidhya.com/blog/2017/05/questions-sql-for-all-aspiring-data-scientists/
+
+https://stackoverflow.com/questions/15387808/mysql-join-two-tables-count-and-sum-from-second-table
+
+
+Getting Top queries ...
+
+select yyyymm,zip, rank() over (partition by a.yyyymm order by a.zip_ct desc ) as rk ,zip_ct
+                                                from 
+                                                            (select yyyymm,substring(work_in_postalcode,1,5) as zip,count(substring(work_in_postalcode,1,5)) as zip_ct
+                                                            from any_table
+                                                            where yyyymm between '201805' and '201807'
+                                                            group by yyyymm,substring(work_in_postalcode,1,5)
+                                                            order by yyyymm,zip_ct desc
+                                                            ) a 
+
+															
+															
+
+score count good,bad,change, unchanged stat															
+select SUM(case when new_score_lens = '9999' and old_score_lens != '9999' THEN 1 ELSE 0 END) as got_worse,
+    SUM(case when new_score_lens != '9999' and old_score_lens = '9999' THEN 1 ELSE 0 END) as got_better,
+    SUM(case when new_score_lens != '9999' and new_score_lens = old_score_lens then 1 else 0 end) as unchanged,
+    SUM(case when new_score_lens != '9999' and old_score_lens != '9999' and new_score_lens != old_score_lens then 1 else 0 end) as changed,
+    SUM(case when new_score_lens = '9999' and old_score_lens = '9999' then 1 else 0 end) as both_unclassified
+from
+    (SELECT
+        CASE WHEN new_score >= 0.7 THEN new_score_lens ELSE '9999' END as new_score_lens,
+        CASE WHEN old_score >= 0.7 THEN old_score_lens ELSE '9999' END as old_score_lens
+    FROM
+        anyu table) ign
+
+		
