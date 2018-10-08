@@ -1,0 +1,41 @@
+start zookeeper :bin/zookeeper-server-start.sh config/zookeeper.properties
+start kafka : kafka-server-start.sh config/server.properties
+
+
+kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic first_topic --create --partitions 3 --replication-factor 1
+kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
+kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic second_topic --delete
+
+producer: produce some message
+kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic first_topic
+
+------------------------------
+kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic topic-1 --describe
+
+
+Consumer :
+kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topic-1
+kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topic-1 --from-beginning
+
+
+producer sending messages to the group: my-first-application:
+kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic topic-1
+
+Consumer group :
+kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topic-1 --group my-first-application
+kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topic-1 --group my-2nd-application --from-beginning
+
+listing groups:
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+
+describe group and its important informations:
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group my-first-application
+
+Resetting Offsets :
+
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group my-first-application --reset-offsets --shift-by 2 --execute --topic topic-1
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group my-first-application --reset-offsets --shift-by -2 --execute --topic topic-1
+
+
+
+
