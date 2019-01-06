@@ -1333,6 +1333,9 @@ https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2016/05/19/67043332/w
 https://bzhangusc.wordpress.com/2014/06/19/optimize-map-performamce-with-mappartitions/
 http://technology.finra.org/code/using-spark-transformations-for-mpreduce-jobs.html
 https://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
+https://data-flair.training/blogs/apache-spark-sql-dataframe-tutorial/
+https://data-flair.training/blogs/spark-rdd-tutorial/
+
 
 
 Java 8:
