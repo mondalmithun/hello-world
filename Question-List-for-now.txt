@@ -1328,6 +1328,11 @@ https://typelevel.org/frameless/TypedDatasetVsSparkDataset.html
 https://image.slidesharecdn.com/advancedapachesparkmeetup-projecttungsten-nov122015-151113030443-lva1-app6891/95/advanced-apache-spark-meetup-project-tungsten-nov-12-2015-56-638.jpg?cb=1447384119
 
 
+1-6-2019:
+https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2016/05/19/67043332/why+spark+s+mapPartitions+transformation+is+faster+than+map+calls+your+function+once+partition+not+once+element
+https://bzhangusc.wordpress.com/2014/06/19/optimize-map-performamce-with-mappartitions/
+http://technology.finra.org/code/using-spark-transformations-for-mpreduce-jobs.html
+https://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
 
 
 Java 8:
