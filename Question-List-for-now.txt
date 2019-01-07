@@ -1336,6 +1336,16 @@ https://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
 https://data-flair.training/blogs/apache-spark-sql-dataframe-tutorial/
 https://data-flair.training/blogs/spark-rdd-tutorial/
 
+https://medium.com/@subhojit20_27731/apache-spark-and-amazon-s3-gotchas-and-best-practices-a767242f3d98
+
+Handling large file write using spark :
+
+****https://www.indix.com/blog/engineering/lessons-from-using-spark-to-process-large-amounts-of-data-part-i/
+https://forums.databricks.com/questions/2848/how-do-i-create-a-single-csv-file-from-multiple-pa.html
+https://stackoverflow.com/questions/31674530/write-single-csv-file-using-spark-csv/41785085#41785085
+https://markhneedham.com/blog/2014/11/30/spark-write-to-csv-file-with-header-using-saveasfile/
+https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
+
 
 
 Java 8:
