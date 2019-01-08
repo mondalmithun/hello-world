@@ -1346,6 +1346,12 @@ https://stackoverflow.com/questions/31674530/write-single-csv-file-using-spark-c
 https://markhneedham.com/blog/2014/11/30/spark-write-to-csv-file-with-header-using-saveasfile/
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
 
+Python:
+https://www.edureka.co/blog/interview-questions/python-interview-questions/
+https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
+https://data-flair.training/blogs/python-generator/
+https://data-flair.training/blogs/python-iterator/
+https://data-flair.training/blogs/python-generator-vs-iterator/
 
 
 Java 8:
