@@ -1347,6 +1347,8 @@ https://markhneedham.com/blog/2014/11/30/spark-write-to-csv-file-with-header-usi
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
 
 Python:
+***https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
+
 https://www.edureka.co/blog/interview-questions/python-interview-questions/
 https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
 https://data-flair.training/blogs/python-generator/
@@ -1354,6 +1356,8 @@ https://data-flair.training/blogs/python-iterator/
 https://data-flair.training/blogs/python-generator-vs-iterator/
 **https://nvie.com/posts/iterators-vs-generators/
 https://stackoverflow.com/questions/2776829/difference-between-pythons-generators-and-iterators
+https://data-flair.training/blogs/python-namespace-and-variable-scope/
+
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
