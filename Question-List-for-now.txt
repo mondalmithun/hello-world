@@ -1366,6 +1366,9 @@ https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/performan
 https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/
 https://michalsenkyr.github.io/2018/01/spark-performance
 
+Spar Partitions :
+https://stackoverflow.com/questions/29011574/how-does-spark-partitioning-work-on-files-in-hdfs?rq=1
+https://stackoverflow.com/questions/40732962/spark-rdd-is-partitions-always-in-ram?noredirect=1&lq=1
 
 
 Python:
