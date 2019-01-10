@@ -1244,10 +1244,6 @@ http://data-flair.training/forums/topic/what-is-parquet-file-format-in-spark
 http://data-flair.training/forums/topic/how-does-apache-spark-handles-accumulated-meta-data
 
 
-
-
-
-
 http://www.guru99.com/mongodb-tutorials.html
 https://www.mongodb.com/download-center#enterprise
 https://www.tutorialspoint.com/mongodb/mongodb_query_document.htm
@@ -1369,6 +1365,25 @@ https://michalsenkyr.github.io/2018/01/spark-performance
 Spar Partitions :
 https://stackoverflow.com/questions/29011574/how-does-spark-partitioning-work-on-files-in-hdfs?rq=1
 https://stackoverflow.com/questions/40732962/spark-rdd-is-partitions-always-in-ram?noredirect=1&lq=1
+
+spark & Hive:
+https://www.quora.com/How-does-Apache-Spark-and-Apache-Hive-work-together
+https://dzone.com/articles/hadoop-vs-spark-a-head-to-head-comparison
+
+spark reading from MySQL or RDBMS:
+https://stackoverflow.com/questions/32188295/how-to-improve-performance-for-slow-spark-jobs-using-dataframe-and-jdbc-connecti
+https://stackoverflow.com/questions/42696455/converting-mysql-table-to-spark-dataset-is-very-slow-compared-to-same-from-csv-f
+https://stackoverflow.com/questions/50807294/spark-jdbc-connection-to-sql-server-times-out-often?noredirect=1&lq=1
+https://github.com/awesome-spark/spark-gotchas/blob/master/05_spark_sql_and_dataset_api.md#parallelizing-reads
+https://stackoverflow.com/questions/41085238/whats-meaning-of-partitioncolumn-lowerbound-upperbound-numpartitions-paramete
+
+spark & data locality:
+https://stackoverflow.com/questions/27638281/does-spark-use-data-locality?rq=1
+
+DataFrame Partitioning:
+https://stackoverflow.com/questions/30995699/how-to-define-partitioning-of-dataframe?rq=1
+https://stackoverflow.com/questions/23127329/how-to-define-custom-partitioner-for-spark-rdds-of-equally-sized-partition-where
+
 
 
 Python:
