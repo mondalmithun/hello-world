@@ -1329,8 +1329,11 @@ https://image.slidesharecdn.com/advancedapachesparkmeetup-projecttungsten-nov122
 
 
 1-6-2019:
+
+Map Partitions :
 https://martin.atlassian.net/wiki/spaces/lestermartin/blog/2016/05/19/67043332/why+spark+s+mapPartitions+transformation+is+faster+than+map+calls+your+function+once+partition+not+once+element
 https://bzhangusc.wordpress.com/2014/06/19/optimize-map-performamce-with-mappartitions/
+
 http://technology.finra.org/code/using-spark-transformations-for-mpreduce-jobs.html
 https://data-flair.training/blogs/apache-spark-rdd-vs-dataframe-vs-dataset/
 https://data-flair.training/blogs/apache-spark-sql-dataframe-tutorial/
