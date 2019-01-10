@@ -1384,7 +1384,8 @@ DataFrame Partitioning:
 https://stackoverflow.com/questions/30995699/how-to-define-partitioning-of-dataframe?rq=1
 https://stackoverflow.com/questions/23127329/how-to-define-custom-partitioner-for-spark-rdds-of-equally-sized-partition-where
 
-
+https://www.hostingadvice.com/how-to/what-is-hadoop/
+https://mindmajix.com/hadoop-interview-questions
 
 Python:
 ***https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
