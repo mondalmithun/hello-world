@@ -1346,6 +1346,25 @@ https://stackoverflow.com/questions/31674530/write-single-csv-file-using-spark-c
 https://markhneedham.com/blog/2014/11/30/spark-write-to-csv-file-with-header-using-saveasfile/
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
 
+Spark joining RDD/Dataframe for minimum shuffling :
+
+https://community.hortonworks.com/questions/107217/how-to-reduce-spark-shuffling-caused-by-join-with.html
+https://github.com/vaquarkhan/vk-wiki-notes/wiki/Apache-Spark-Join-guidelines-and-Performance-tuning
+https://umbertogriffo.gitbooks.io/apache-spark-best-practices-and-tuning/content/avoiding_shuffle_less_stage,_more_fast/joining-a-large-and-a-small-rdd.html
+https://umbertogriffo.gitbooks.io/apache-spark-best-practices-and-tuning/content/avoiding_shuffle_less_stage,_more_fast/joining-a-large-and-a-medium-size-rdd.html
+https://stackoverflow.com/questions/21698443/spark-best-practice-for-retrieving-big-data-from-rdd-to-local-machine
+http://fdahms.com/2015/10/04/writing-efficient-spark-jobs/
+http://codingjunkie.net/spark-corner-cases/
+https://blog.knoldus.com/broadcast-variables-in-spark-how-and-when-to-use-them/
+https://databricks.com/blog/2016/05/23/apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.html
+https://issues.apache.org/jira/browse/SPARK-11512
+https://stackoverflow.com/questions/28395376/does-a-join-of-co-partitioned-rdds-cause-a-shuffle-in-apache-spark
+https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/performance_optimization/how_many_partitions_does_an_rdd_have.html
+https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/
+https://michalsenkyr.github.io/2018/01/spark-performance
+
+
+
 Python:
 ***https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
 
