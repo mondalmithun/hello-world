@@ -1134,8 +1134,57 @@ Parquet:
 https://community.cloudera.com/t5/Advanced-Analytics-Apache-Spark/add-columns-to-hive-parquet-table/m-p/43418
 https://stackoverflow.com/questions/26291165/spark-sql-unable-to-complete-writing-parquet-data-with-a-large-number-of-shards
 
+
+File format for Hive or Spark:
 https://www.ellicium.com/orc-parquet-avro/****
 https://www.linkedin.com/pulse/hdfc-storage-data-format-like-avro-vs-parquet-orc-jeetendra-gangele
+https://www.datanami.com/2018/05/16/big-data-file-formats-demystified/
+https://www.nexla.com/resource/introduction-big-data-formats-understanding-avro-parquet-orc/
+https://www.quora.com/What-are-the-differences-between-ORC-Avro-and-Parquet-File-Formats-in-Hadoop-in-terms-of-compression-and-speed
+
+
+data = sqlContext.read.parquet("/tmp/testParquet")
+data.write.parquet('movielens.parquet')
+movies = spark.read.json("example/movielens.json")
+nice_movies.write.json("nice_movies")
+
+.mode ->>append or overwirte.
+---------------------------------------------------------
+from pyspark import SparkContext
+from pyspark.sql import SQLContext
+from pyspark.sql.types import *
+
+
+if __name__ == "__main__":
+    sc = SparkContext(appName="CSV2Parquet")
+    sqlContext = SQLContext(sc)
+    
+    schema = StructType([
+            StructField("col1", IntegerType(), True),
+            StructField("col2", IntegerType(), True),
+            StructField("col3", StringType(), True),
+            StructField("col4", StringType(), True),
+            StructField("col5", StringType(), True),
+            StructField("col6", DoubleType(), True)])
+    
+    rdd = sc.textFile("/home/sarvesh/Desktop/input.csv").map(lambda line: line.split(","))
+    df = sqlContext.createDataFrame(rdd, schema)
+    df.write.parquet('/home/sarvesh/Desktop/input-parquet')
+    
+    ---------------
+    from pyspark import SparkContext
+from pyspark.sql import SQLContext
+from pyspark.sql.types import *
+
+
+if __name__ == "__main__":
+    sc = SparkContext(appName="Parquet2CSV")
+    sqlContext = SQLContext(sc)
+
+    readdf = sqlContext.read.parquet('/home/sarvesh/Desktop/submissions-parquet')
+    readdf.rdd.map(tuple).map(lambda row: str(row[0]) + "," + str(row[1]) + ","+ str(row[2]) + ","+ str(row[3])+ ","+
+                              str(row[4])+","+ str(row[5])).saveAsTextFile("/home/sarvesh/Desktop/parquet-to-csv.csv")
+
 -------------------	
 Oozie:
 https://gist.github.com/airawat/6015793
