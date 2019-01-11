@@ -1456,6 +1456,10 @@ There are some differences worth noting between ndarrays and Series objects. Fir
 https://blog.thedataincubator.com/2018/02/numpy-and-pandas/
 http://machinelearningexp.com/data-science-performance-of-python-vs-pandas-vs-numpy/
 
+ACID prop with Hadoop :
+https://acadgild.com/blog/acid-transactions-in-hive
+https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapreduce-is-invoked-in-hive
+
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
