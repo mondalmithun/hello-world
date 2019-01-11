@@ -1008,6 +1008,8 @@ Added in 2017
 	https://flyingbytes.github.io/programming/java8/functional/part1/2017/01/23/Java8-Part1.html
 	https://blog-rmannibucau.rhcloud.com/#/post/java-stream-error-handling
 	https://dzone.com/articles/java-collections-part-1?edition=273883&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=dd%202017-03-03
+	
+	
 		
 		
 -------------------	
@@ -1470,3 +1472,4 @@ http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764?pgno=3 **
 https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx
 https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/
 http://www.copypasteisforword.com/notes/lambda-expressions-in-java ***
+https://www.geeksforgeeks.org/functional-interfaces-java/
