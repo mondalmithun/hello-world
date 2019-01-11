@@ -1454,7 +1454,7 @@ https://medium.com/@ericvanrees/pandas-series-objects-and-numpy-arrays-15dfe0591
 There are some differences worth noting between ndarrays and Series objects. First of all, elements in NumPy arrays are accessed by their integer position, starting with zero for the first element. A pandas Series Object is more flexible as you can use define your own labeled index to index and access elements of an array. You can also use letters instead of numbers, or number an array in descending order instead of ascending order. Second, aligning data from different Series and matching labels with Series objects is more efficient than using ndarrays, for example dealing with missing values. If there are no matching labels during alignment, pandas returns NaN (not any number) so that the operation does not fail.
 
 https://blog.thedataincubator.com/2018/02/numpy-and-pandas/
-
+http://machinelearningexp.com/data-science-performance-of-python-vs-pandas-vs-numpy/
 
 
 Java 8:
