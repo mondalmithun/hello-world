@@ -1448,6 +1448,14 @@ https://data-flair.training/blogs/python-generator-vs-iterator/
 https://stackoverflow.com/questions/2776829/difference-between-pythons-generators-and-iterators
 https://data-flair.training/blogs/python-namespace-and-variable-scope/
 
+NumPy Vs Panda
+Differences between ndarrays and Series Objects
+https://medium.com/@ericvanrees/pandas-series-objects-and-numpy-arrays-15dfe05919d7
+There are some differences worth noting between ndarrays and Series objects. First of all, elements in NumPy arrays are accessed by their integer position, starting with zero for the first element. A pandas Series Object is more flexible as you can use define your own labeled index to index and access elements of an array. You can also use letters instead of numbers, or number an array in descending order instead of ascending order. Second, aligning data from different Series and matching labels with Series objects is more efficient than using ndarrays, for example dealing with missing values. If there are no matching labels during alignment, pandas returns NaN (not any number) so that the operation does not fail.
+
+https://blog.thedataincubator.com/2018/02/numpy-and-pandas/
+
+
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
