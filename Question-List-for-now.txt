@@ -1435,6 +1435,12 @@ DataFrame Partitioning:
 https://stackoverflow.com/questions/30995699/how-to-define-partitioning-of-dataframe?rq=1
 https://stackoverflow.com/questions/23127329/how-to-define-custom-partitioner-for-spark-rdds-of-equally-sized-partition-where
 
+Spark internals working ******
+https://stackoverflow.com/questions/30691385/internal-work-of-spark/30691654#30691654
+https://www.quora.com/What-is-the-difference-between-RDD-Lineage-Graph-and-Directed-Acyclic-Graph-DAG-in-Spark
+https://techvidvan.com/tutorials/fault-tolerance-in-spark/
+
+
 https://www.hostingadvice.com/how-to/what-is-hadoop/
 https://mindmajix.com/hadoop-interview-questions
 
