@@ -1448,6 +1448,9 @@ ACID prop with Hadoop :
 https://acadgild.com/blog/acid-transactions-in-hive
 https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapreduce-is-invoked-in-hive
 
+HIVE performance tuning :
+http://hadooptutorial.info/hive-performance-tuning/
+
 
 Python:
 ***https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
@@ -1471,14 +1474,25 @@ http://machinelearningexp.com/data-science-performance-of-python-vs-pandas-vs-nu
 
 -----------------
 https://www.journaldev.com/15490/python-interview-questions
+
 ***static and class method
 https://www.journaldev.com/18722/python-static-method
 https://www.geeksforgeeks.org/class-method-vs-static-method-python/
+https://www.makeuseof.com/tag/python-instance-static-class-methods/
+
 https://www.journaldev.com/17290/python-threading-multithreading
 https://www.journaldev.com/17416/python-subprocess
 https://www.journaldev.com/18729/python-configparser
 https://www.journaldev.com/19392/python-xml-to-json-dict
 https://www.journaldev.com/17752/python-main-function
+
+list vs tuple:
+https://www.programiz.com/python-programming/list-vs-tuples#usage
+https://stackoverflow.com/questions/626759/whats-the-difference-between-lists-and-tuples#
+
+decorator:
+https://realpython.com/primer-on-python-decorators/#simple-decorators
+https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
 
 
 Java 8:
