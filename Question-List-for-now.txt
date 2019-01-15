@@ -1444,6 +1444,11 @@ https://techvidvan.com/tutorials/fault-tolerance-in-spark/
 https://www.hostingadvice.com/how-to/what-is-hadoop/
 https://mindmajix.com/hadoop-interview-questions
 
+ACID prop with Hadoop :
+https://acadgild.com/blog/acid-transactions-in-hive
+https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapreduce-is-invoked-in-hive
+
+
 Python:
 ***https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
 
@@ -1464,9 +1469,14 @@ There are some differences worth noting between ndarrays and Series objects. Fir
 https://blog.thedataincubator.com/2018/02/numpy-and-pandas/
 http://machinelearningexp.com/data-science-performance-of-python-vs-pandas-vs-numpy/
 
-ACID prop with Hadoop :
-https://acadgild.com/blog/acid-transactions-in-hive
-https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapreduce-is-invoked-in-hive
+-----------------
+https://www.journaldev.com/15490/python-interview-questions
+https://www.journaldev.com/18722/python-static-method
+https://www.journaldev.com/17290/python-threading-multithreading
+https://www.journaldev.com/17416/python-subprocess
+https://www.journaldev.com/18729/python-configparser
+https://www.journaldev.com/19392/python-xml-to-json-dict
+https://www.journaldev.com/17752/python-main-function
 
 
 Java 8:
