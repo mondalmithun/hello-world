@@ -1471,7 +1471,9 @@ http://machinelearningexp.com/data-science-performance-of-python-vs-pandas-vs-nu
 
 -----------------
 https://www.journaldev.com/15490/python-interview-questions
+***static and class method
 https://www.journaldev.com/18722/python-static-method
+https://www.geeksforgeeks.org/class-method-vs-static-method-python/
 https://www.journaldev.com/17290/python-threading-multithreading
 https://www.journaldev.com/17416/python-subprocess
 https://www.journaldev.com/18729/python-configparser
