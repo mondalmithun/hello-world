@@ -1488,6 +1488,9 @@ https://www.journaldev.com/17416/python-subprocess
 https://www.journaldev.com/18729/python-configparser
 https://www.journaldev.com/19392/python-xml-to-json-dict
 https://www.journaldev.com/17752/python-main-function
+https://www.journaldev.com/17243/python-sys-module
+https://www.journaldev.com/17508/python-getopt
+
 
 list vs tuple:
 https://www.programiz.com/python-programming/list-vs-tuples#usage
