@@ -1491,6 +1491,11 @@ https://www.journaldev.com/17752/python-main-function
 https://www.journaldev.com/17243/python-sys-module
 https://www.journaldev.com/17508/python-getopt
 
+https://www.journaldev.com/21807/python-ordereddict
+https://www.journaldev.com/14623/python-multiple-inheritance
+https://www.journaldev.com/22761/python-callable-__call__
+https://www.journaldev.com/14523/python-list-comprehension
+https://www.journaldev.com/14504/python-sort-list
 
 list vs tuple:
 https://www.programiz.com/python-programming/list-vs-tuples#usage
