@@ -1453,6 +1453,10 @@ http://hadooptutorial.info/hive-performance-tuning/
 
 
 Python:
+
+Coding:
+https://www.testdome.com/d/python-interview-questions/9
+
 ***https://www.edureka.co/blog/why-you-should-choose-python-for-big-data
 
 https://www.edureka.co/blog/interview-questions/python-interview-questions/
