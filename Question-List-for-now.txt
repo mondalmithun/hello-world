@@ -1505,6 +1505,10 @@ decorator:
 https://realpython.com/primer-on-python-decorators/#simple-decorators
 https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
 
+time complexity:
+https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
+https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/
+https://cs.stackexchange.com/questions/98275/help-with-time-complexity
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
