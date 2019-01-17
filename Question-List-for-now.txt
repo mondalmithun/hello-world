@@ -1450,7 +1450,11 @@ https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapred
 
 HIVE performance tuning :
 http://hadooptutorial.info/hive-performance-tuning/
-
+http://hadooptutorial.info/enable-compression-in-hive
+http://hadooptutorial.info/hadoop-best-practices/
+http://hadooptutorial.info/category/interview-questions/mapreduce-interview-questions/
+http://hadooptutorial.info/good-sql-queries-collection/
+http://hadooptutorial.info/sqoop-interview-questions-and-answers-for-experienced/
 
 Python:
 
