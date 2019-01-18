@@ -1092,6 +1092,11 @@ Custome Inputformat:
 https://shrikantbang.wordpress.com/2013/10/22/hadoop-custom-input-format/
 http://analyticspro.org/2012/08/01/wordcount-with-custom-record-reader-of-textinputformat/
 
+***
+https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html
+https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
+http://spark.apache.org/docs/latest/sql-getting-started.html
+
 Examples:
 https://github.com/rathboma/hadoop-framework-examples
 
@@ -1140,8 +1145,8 @@ https://stackoverflow.com/questions/26291165/spark-sql-unable-to-complete-writin
 File format for Hive or Spark:
 https://www.ellicium.com/orc-parquet-avro/****
 https://www.linkedin.com/pulse/hdfc-storage-data-format-like-avro-vs-parquet-orc-jeetendra-gangele
-https://www.datanami.com/2018/05/16/big-data-file-formats-demystified/
-https://www.nexla.com/resource/introduction-big-data-formats-understanding-avro-parquet-orc/
+https://www.datanami.com/2018/05/16/big-data-file-formats-demystified/***
+https://www.nexla.com/resource/introduction-big-data-formats-understanding-avro-parquet-orc/***
 https://www.quora.com/What-are-the-differences-between-ORC-Avro-and-Parquet-File-Formats-in-Hadoop-in-terms-of-compression-and-speed
 
 
@@ -1456,6 +1461,13 @@ http://hadooptutorial.info/category/interview-questions/mapreduce-interview-ques
 http://hadooptutorial.info/good-sql-queries-collection/
 http://hadooptutorial.info/sqoop-interview-questions-and-answers-for-experienced/
 
+spark analytics:
+https://alvinhenrick.com/2017/05/16/apache-spark-analytical-window-functions/
+https://modeanalytics.com/modeanalytics/reports/3369eab09c07/queries/8b8cfa32e6b4
+https://mode.com/blog/bridge-the-gap-window-functions
+https://medium.com/jbennetcodes/how-to-get-rid-of-loops-and-use-window-functions-in-pandas-or-spark-sql-907f274850e4
+https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-functions-windows.html
+
 Python:
 
 Coding:
@@ -1517,6 +1529,9 @@ time complexity:
 https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
 https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/
 https://cs.stackexchange.com/questions/98275/help-with-time-complexity
+
+https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91
+https://medium.com/@evisoftMX/i-have-just-gone-through-two-of-these-interviews-on-the-last-month-completely-agree-with-you-b036e942b89f
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
