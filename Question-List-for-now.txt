@@ -1382,6 +1382,17 @@ Spark has been offering checkpoints on streaming since earlier versions (at leas
 Eager Checkpoint - catalize optimization is done for the lineage create newly after checkpointed lineage only
 Non-Eager Checkpoint - catalize optimization is done for while lineage 
 
+5.1.  MEMORY_ONLY (Default level)
+It is default memory, while it is must it stores data in available memory cluster (JVM), as an unserialized object. It also happens that if there is insufficient memory some of the data partitions may not be cached, that uncached data computed next time when we need it. In this option, we only use memory, not disk.
+5.2. MEMORY_AND_DISK
+By this option, RDD stored as deserialized data objects. As sometimes RDD may not fit in the memory cluster, it stores the remaining part on the disk. Again we read the leftover part when needed. In this option, we use memory as well as disk.
+5.3.  MEMORY_ONLY_SER
+In this option, RDD stored as serialized Java objects in memory. Serialized objects mean one-byte array per partition, this is much space efficient which saves memory. Due to this some data partitions may not be cached, so we only calculate remaining part as per requirement. In this option, we do not use the disk.
+5.4.  MEMORY_ONLY_DISK_SER
+This option is as similar as MEMORY_ONLY_SER. Unlike, it saves the leftover part in the disk which is not stored in memory. This option uses both memory and disk storage.
+5.5.  DISC_ONLY
+This option stores RDD only on Disk. It makes only use of disk for storage purpose.
+
 Cache vs checkpoint
 https://stackoverflow.com/questions/35127720/what-is-the-difference-between-spark-checkpoint-and-persist-to-a-disk
 https://dzone.com/articles/what-are-spark-checkpoints-on-dataframes
