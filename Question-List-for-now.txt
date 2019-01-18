@@ -1094,6 +1094,7 @@ http://analyticspro.org/2012/08/01/wordcount-with-custom-record-reader-of-textin
 
 ***
 https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html
+https://blog.antlypls.com/blog/2016/04/29/when-data-driven-app-smells-bad/
 https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
 http://spark.apache.org/docs/latest/sql-getting-started.html
 
@@ -1318,6 +1319,44 @@ http://www.journaldev.com/2394/java-dependency-injection-design-pattern-example-
 
 http://www.journaldev.com/8079/scala-tuples-and-maps-example
 
+Handling Large Queries in Interactive Workflows:
+https://docs.databricks.com/spark/latest/spark-sql/query-watchdog.html
+import org.apache.spark.sql.functions._
+spark.conf.set("spark.sql.shuffle.partitions", 10)
+
+spark.range(1000000)
+  .withColumn("join_key", lit(" "))
+  .createOrReplaceTempView("table_x")
+spark.range(1000000)
+  .withColumn("join_key", lit(" "))
+  .createOrReplaceTempView("table_y")
+  
+  SELECT
+  id, count()
+FROM
+  (SELECT
+    x.id
+  FROM
+    table_x x
+  JOIN
+    table_y y
+  on x.join_key = y.join_key)
+GROUP BY id
+
+spark.conf.set("spark.databricks.queryWatchdog.enabled", true)
+spark.conf.set("spark.databricks.queryWatchdog.outputRatioThreshold", 1000L)
+or
+spark.conf.set("spark.databricks.queryWatchdog.minTimeSecs", 10L)
+spark.conf.set("spark.databricks.queryWatchdog.minOutputRows", 100000L)
+or
+spark.conf.set("spark.databricks.queryWatchdog.maxHivePartitions", 20000)
+spark.conf.set("spark.databricks.queryWatchdog.maxQueryTasks", 20000)
+
+When should you enable Query Watchdog?
+Query Watchdog should be enabled for ad hoc analytics clusters where SQL analysts and data scientists are sharing a given cluster and an administrator needs to make sure that queries “play nicely” with one another.
+
+When should you disable Query Watchdog?
+In general we do not advise eagerly cancelling queries used in an ETL scenario because there typically isn’t a human in the loop to correct the error. We recommend that you disable Query Watchdog for all but ad hoc analytics clusters.
 
 
 http://coe4bd.github.io/HadoopHowTo/sparkJava/sparkJava.html
