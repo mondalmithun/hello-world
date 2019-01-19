@@ -1504,12 +1504,20 @@ https://acadgild.com/blog/acid-transactions-in-hive
 https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapreduce-is-invoked-in-hive
 
 HIVE performance tuning :
+https://deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
+https://datarus.wordpress.com/2015/05/04/fighting-the-skew-in-spark/
+https://github.com/TedBear42/spark_training/blob/master/src/main/scala/com/malaska/spark/training/salted/SaltedExample.scala
+https://stackoverflow.com/questions/36696326/map-vs-mapvalues-in-spark
+https://bigdatacraziness.wordpress.com/2018/01/05/oh-my-god-is-my-data-skewed/
+
+
 http://hadooptutorial.info/hive-performance-tuning/
 http://hadooptutorial.info/enable-compression-in-hive
 http://hadooptutorial.info/hadoop-best-practices/
 http://hadooptutorial.info/category/interview-questions/mapreduce-interview-questions/
 http://hadooptutorial.info/good-sql-queries-collection/
 http://hadooptutorial.info/sqoop-interview-questions-and-answers-for-experienced/
+
 
 spark analytics:
 https://alvinhenrick.com/2017/05/16/apache-spark-analytical-window-functions/
