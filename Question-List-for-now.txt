@@ -1468,6 +1468,63 @@ https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/performan
 https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/
 https://michalsenkyr.github.io/2018/01/spark-performance
 
+https://community.hortonworks.com/questions/51391/dataframessets-simple-join-is-skewed-due-to-join-c.html
+https://stackoverflow.com/questions/43831387/how-to-avoid-shuffles-while-joining-dataframes-on-unique-keys ****
+https://stackoverflow.com/questions/40309192/spark-executor-out-of-memory-in-join-and-reducebykey?rq=1 ****
+https://stackoverflow.com/questions/35948714/joining-a-large-and-a-ginormous-spark-dataframe?rq=1
+
+join df has same partitions with df1 and df2 :
+https://stackoverflow.com/questions/46773829/which-properties-has-spark-dataframe-after-join-of-two-dataframes-with-same-part?noredirect=1&lq=1
+
+
+
+https://stackoverflow.com/questions/40320441/difference-between-sc-broadcast-and-broadcast-function-in-spark-sql/40363613#40363613
+
+ >>> Broadcast: if one side of the join has an estimated physical size that is smaller than the * user-configurable [[SQLConf.AUTO_BROADCASTJOIN_THRESHOLD]] threshold * or if that side has an explicit broadcast hint (e.g. the user applied the *
+[[org.apache.spark.sql.functions.broadcast()]] function to a DataFrame), then that side * of the join will be broadcasted and the other side will be streamed, with no shuffling *
+performed. If both sides of the join are eligible to be broadcasted then the *
+>>> Shuffle hash join: if the average size of a single partition is small enough to build a hash * table.
+>>> Sort merge: if the matching join keys are sortable.
+
+If there is no joining keys, Join implementations are chosen with the following precedence:
+BroadcastNestedLoopJoin: if one side of the join could be broadcasted
+CartesianProduct: for Inner join
+BroadcastNestedLoopJoin
+The below method controls the behavior based on size we set to spark.sql.autoBroadcastJoinThreshold by default it is 10mb
+Note : smallDataFrame.join(largeDataFrame) does not do a broadcast hash join, but largeDataFrame.join(smallDataFrame) does.
+
+Join :
+Inner join using non primary keys
+Last part of this article is about joins on non unique columns and common mistakes related to it. Join (intersection) diagrams in the beginning of this article stuck in our heads. Because of visual comparison of sets intersection we assume, that result table after inner join should be smaller, than any of the source tables. This is correct only for joins on unique columns and wrong if columns in both tables are not unique. Consider following DataFrame with duplicated records and its self-join:
+
+val df = sc.parallelize(Array(
+  (0), (1), (1)
+)).toDF("c1")
+
+df.show()
+df.join(df, "c1").show()
+
+// Original DataFrame
++---+
+| c1|
++---+
+|  0|
+|  1|
+|  1|
++---+
+
+// Self-joined DataFrame
++---+
+| c1|
++---+
+|  0|
+|  1|
+|  1|
+|  1|
+|  1|
++---+
+Note, that size of the result DataFrame is bigger than the source size. It could be as big as n2, where n is a size of source.
+
 https://deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/#top*****
 https://deepsense.ai/scheduling-spark-jobs-in-seahorse/
 
@@ -1476,6 +1533,7 @@ http://timepasstechies.com/oozie-spark-action-workflow-example/
 https://stackoverflow.com/questions/36696326/map-vs-mapvalues-in-spark
 https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.5/bk_spark-component-guide/content/ch_oozie-spark-action.html
 https://developer.ibm.com/hadoop/2015/11/05/run-spark-job-yarn-oozie/
+https://deepsense.ai/understanding-apache-sparks-execution-model-using-sparklisteners-part-1/****
 
 
 Hadoop distCp / -getmerge/ spark option/ hadoop streaming jar/ hive concatenation options:
