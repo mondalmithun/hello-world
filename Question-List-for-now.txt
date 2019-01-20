@@ -1468,7 +1468,23 @@ https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/performan
 https://techmagie.wordpress.com/2015/12/19/understanding-spark-partitioning/
 https://michalsenkyr.github.io/2018/01/spark-performance
 
-Spar Partitions :
+https://deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/#top*****
+https://deepsense.ai/scheduling-spark-jobs-in-seahorse/
+
+spark & Oozie:
+http://timepasstechies.com/oozie-spark-action-workflow-example/
+https://stackoverflow.com/questions/36696326/map-vs-mapvalues-in-spark
+https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.5/bk_spark-component-guide/content/ch_oozie-spark-action.html
+https://developer.ibm.com/hadoop/2015/11/05/run-spark-job-yarn-oozie/
+
+
+Hadoop distCp / -getmerge/ spark option/ hadoop streaming jar/ hive concatenation options:
+https://examples.javacodegeeks.com/enterprise-java/apache-hadoop/apache-hadoop-distcp-example/
+https://community.hortonworks.com/questions/158009/distcp-vs-hdfs-cp.html
+https://community.hortonworks.com/questions/42466/best-way-to-merge-multi-part-file-into-single-file.html ********
+https://community.hortonworks.com/questions/8010/hives-alter-table-partition-concatenate-not-workin.html ******
+
+Spark Partitions :
 https://stackoverflow.com/questions/29011574/how-does-spark-partitioning-work-on-files-in-hdfs?rq=1
 https://stackoverflow.com/questions/40732962/spark-rdd-is-partitions-always-in-ram?noredirect=1&lq=1
 
