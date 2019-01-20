@@ -1535,6 +1535,10 @@ https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.5/bk_spark-component-guid
 https://developer.ibm.com/hadoop/2015/11/05/run-spark-job-yarn-oozie/
 https://deepsense.ai/understanding-apache-sparks-execution-model-using-sparklisteners-part-1/****
 
+sparl memory : on heap and off heap :
+https://www.pgs-soft.com/blog/spark-memory-management-part-1-push-it-to-the-limits/
+https://www.tutorialdocs.com/article/spark-memory-management.html
+
 
 Hadoop distCp / -getmerge/ spark option/ hadoop streaming jar/ hive concatenation options:
 https://examples.javacodegeeks.com/enterprise-java/apache-hadoop/apache-hadoop-distcp-example/
