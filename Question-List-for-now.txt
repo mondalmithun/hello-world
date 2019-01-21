@@ -1604,6 +1604,9 @@ https://mode.com/blog/bridge-the-gap-window-functions
 https://medium.com/jbennetcodes/how-to-get-rid-of-loops-and-use-window-functions-in-pandas-or-spark-sql-907f274850e4
 https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-functions-windows.html
 
+
+https://dlab.epfl.ch/2017-09-30-what-i-learned-from-processing-big-data-with-spark/************
+
 Python:
 
 Coding:
