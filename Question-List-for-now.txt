@@ -1604,8 +1604,33 @@ https://mode.com/blog/bridge-the-gap-window-functions
 https://medium.com/jbennetcodes/how-to-get-rid-of-loops-and-use-window-functions-in-pandas-or-spark-sql-907f274850e4
 https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-functions-windows.html
 
+https://stackoverflow.com/questions/48552672/how-to-divide-a-column-by-its-sum-in-a-spark-dataframe*****
+https://stackoverflow.com/questions/40759937/how-to-compute-the-largest-value-in-a-column-using-withcolumn
+
 
 https://dlab.epfl.ch/2017-09-30-what-i-learned-from-processing-big-data-with-spark/************
+
+Exception handling :
+https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/
+https://anish749.github.io/spark/exception-handling-spark-data-frames/*****
+https://docs.databricks.com/spark/latest/spark-sql/handling-bad-records.html***
+
+https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/best_practices/dealing_with_bad_data.html******
+https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/troubleshooting/README.html********
+https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/performance_optimization/data_locality.html
+http://spark.apache.org/docs/latest/configuration.html#scheduling
+https://discourse.snowplowanalytics.com/t/debugging-bad-rows-in-spark-and-zeppelin-tutorial/400
+
+python implementation of scala success ,failure:
+https://stackoverflow.com/questions/33383275/what-is-the-equivalent-to-scala-util-try-in-pyspark**********
+
+spark csv:
+https://github.com/databricks/spark-csv
+https://stackoverflow.com/questions/49724879/how-to-drop-malformed-rows-while-reading-csv-with-schema-spark****
+https://www.discussbigdata.com/2018/07/capture-bad-records-while-loading-csv.html************
+
+
+
 
 Python:
 
