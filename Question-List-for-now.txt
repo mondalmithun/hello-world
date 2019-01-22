@@ -1233,6 +1233,8 @@ https://blog.deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
 https://datarus.wordpress.com/2015/05/04/fighting-the-skew-in-spark/
 http://bigdatatn.blogspot.com/2017/05/using-spark-with-hbase-and-salted-row.html
 
+https://stackoverflow.com/questions/21698443/spark-best-practice-for-retrieving-big-data-from-rdd-to-local-machine
+
 
 Real time streaming:
 https://github.com/caroljmcdonald/mapr-streams-sparkstreaming-hbase/blob/master/src/main/scala/solution/SensorStreamConsumer.scala
@@ -1263,6 +1265,7 @@ http://www.edupristine.com/blog/using-spark-sql-engine
 
 https://www.edureka.co/blog/apache-spark-combinebykey-explained **
 http://codingjunkie.net/spark-combine-by-key/ ***
+http://codingjunkie.net/spark-corner-cases/
 http://apache-spark-user-list.1001560.n3.nabble.com/aggregateByKey-vs-combineByKey-td15321.html
 
 Combine by key and mapvalue/reducebykey example :
@@ -1644,7 +1647,8 @@ https://stackoverflow.com/questions/49724879/how-to-drop-malformed-rows-while-re
 https://www.discussbigdata.com/2018/07/capture-bad-records-while-loading-csv.html************
 
 
-
+kafka :
+http://codingjunkie.net/kafka-streams-purchase-transaction/***
 
 Python:
 
