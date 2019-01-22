@@ -1585,8 +1585,12 @@ https://www.hostingadvice.com/how-to/what-is-hadoop/
 https://mindmajix.com/hadoop-interview-questions
 
 ACID prop with Hadoop :
-https://acadgild.com/blog/acid-transactions-in-hive
+https://acadgild.com/blog/acid-transactions-in-hive*******
 https://stackoverflow.com/questions/30908203/can-you-explain-when-and-why-mapreduce-is-invoked-in-hive
+https://hortonworks.com/tutorial/using-hive-acid-transactions-to-insert-update-and-delete-data/
+https://dzone.com/articles/update-hive-tables-the-easy-way-hortonworks****
+
+
 
 HIVE performance tuning :
 https://deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
@@ -1706,6 +1710,9 @@ https://cs.stackexchange.com/questions/98275/help-with-time-complexity
 
 https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91
 https://medium.com/@evisoftMX/i-have-just-gone-through-two-of-these-interviews-on-the-last-month-completely-agree-with-you-b036e942b89f
+
+Visualization
+https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e
 
 Java 8:
 http://www.java67.com/2014/09/top-10-java-8-tutorials-best-of-lot.html
