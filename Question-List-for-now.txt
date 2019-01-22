@@ -1588,13 +1588,14 @@ https://github.com/TedBear42/spark_training/blob/master/src/main/scala/com/malas
 https://stackoverflow.com/questions/36696326/map-vs-mapvalues-in-spark
 https://bigdatacraziness.wordpress.com/2018/01/05/oh-my-god-is-my-data-skewed/
 
-
+******************** ************************************************
 http://hadooptutorial.info/hive-performance-tuning/
 http://hadooptutorial.info/enable-compression-in-hive
 http://hadooptutorial.info/hadoop-best-practices/
 http://hadooptutorial.info/category/interview-questions/mapreduce-interview-questions/
 http://hadooptutorial.info/good-sql-queries-collection/
 http://hadooptutorial.info/sqoop-interview-questions-and-answers-for-experienced/
+******************** ************************************************
 
 
 spark analytics:
