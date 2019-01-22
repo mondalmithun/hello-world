@@ -1546,6 +1546,13 @@ https://community.hortonworks.com/questions/158009/distcp-vs-hdfs-cp.html
 https://community.hortonworks.com/questions/42466/best-way-to-merge-multi-part-file-into-single-file.html ********
 https://community.hortonworks.com/questions/8010/hives-alter-table-partition-concatenate-not-workin.html ******
 
+spark shuffle internals:********************
+https://github.com/JerryLead/SparkInternals/blob/master/markdown/english/4-shuffleDetails.md
+https://0x0fff.com/spark-architecture-shuffle/
+https://github.com/JerryLead/SparkInternals/blob/master/markdown/english/7-Broadcast.md
+https://github.com/JerryLead/SparkInternals/blob/master/markdown/english/3-JobPhysicalPlan.md
+https://stackoverflow.com/questions/41585673/understanding-shuffle-managers-in-spark
+
 Spark Partitions :
 https://stackoverflow.com/questions/29011574/how-does-spark-partitioning-work-on-files-in-hdfs?rq=1
 https://stackoverflow.com/questions/40732962/spark-rdd-is-partitions-always-in-ram?noredirect=1&lq=1
