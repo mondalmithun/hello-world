@@ -1557,6 +1557,8 @@ Spark Partitions :
 https://stackoverflow.com/questions/29011574/how-does-spark-partitioning-work-on-files-in-hdfs?rq=1
 https://stackoverflow.com/questions/40732962/spark-rdd-is-partitions-always-in-ram?noredirect=1&lq=1
 
+Number of Tasks on per stage basis = Number of partitions
+
 spark & Hive:
 https://www.quora.com/How-does-Apache-Spark-and-Apache-Hive-work-together
 https://dzone.com/articles/hadoop-vs-spark-a-head-to-head-comparison
