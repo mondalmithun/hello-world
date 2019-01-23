@@ -1730,3 +1730,19 @@ https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx
 https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/
 http://www.copypasteisforword.com/notes/lambda-expressions-in-java ***
 https://www.geeksforgeeks.org/functional-interfaces-java/
+
+
+interview:
+https://www.codementor.io/savingfunda/20-java-interview-questions-and-answers-from-investment-banks-98ghl6frw****
+https://www.javainuse.com/java/java8_intvw
+https://www.baeldung.com/java-8-interview-questions
+
+algo interview
+https://javahungry.blogspot.com/2013/09/core-java-coding-programming-questions-answers-technical-interview-java.html
+https://javahungry.blogspot.com/2013/12/first-non-repeated-character-in-string-java-program-code-example.html
+https://javahungry.blogspot.com/2013/06/count-number-of-words-in-string-example-java-program-code.html
+https://javahungry.blogspot.com/2013/10/count-total-number-of-times-each-alphabet-appears-in-the-string.html
+
+https://www.educba.com/java-8-interview-questions/
+https://www.educba.com/advance-sql-interview-questions/
+https://www.educba.com/java-multi-threading-interview-questions/
