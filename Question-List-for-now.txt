@@ -1613,6 +1613,7 @@ http://hadooptutorial.info/good-sql-queries-collection/
 http://hadooptutorial.info/sqoop-interview-questions-and-answers-for-experienced/
 ******************** ************************************************
 
+https://blog.sicara.com/publish-data-outside-datalake-spark-connector-f1684a736422
 
 spark analytics:
 https://alvinhenrick.com/2017/05/16/apache-spark-analytical-window-functions/
@@ -1737,6 +1738,9 @@ https://www.codementor.io/savingfunda/20-java-interview-questions-and-answers-fr
 https://www.javainuse.com/java/java8_intvw
 https://www.baeldung.com/java-8-interview-questions
 
+https://javahungry.blogspot.com/2018/12/difference-between-bufferedreader-and-scanner-in-java-examples.html
+
+
 https://www.educba.com/java-8-interview-questions/
 https://www.educba.com/advance-sql-interview-questions/
 https://www.educba.com/java-multi-threading-interview-questions/
@@ -1749,6 +1753,7 @@ https://javahungry.blogspot.com/2013/10/count-total-number-of-times-each-alphabe
 https://javahungry.blogspot.com/2013/09/remove-or-removing-left-and-right-white-spaces-in-java.html
 https://javahungry.blogspot.com/2014/01/remove-character-string-java-example-specific-certain-unwanted-characters.html
 https://javahungry.blogspot.com/2014/03/algorithm-to-find-permutations-of-string-using-recursion-in-java.html***
+https://javahungry.blogspot.com/2014/02/how-to-convert-string-to-int-in-java-without-using-integer-parseint-method-code-with-example.html
 
 
 
