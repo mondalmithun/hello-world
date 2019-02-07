@@ -1648,6 +1648,89 @@ https://stackoverflow.com/questions/49724879/how-to-drop-malformed-rows-while-re
 https://www.discussbigdata.com/2018/07/capture-bad-records-while-loading-csv.html************
 
 
+#############################################################################################################################
+SPARK JOIN : 
+https://stackoverflow.com/questions/53524062/efficient-pyspark-join/53720497#53720497************
+
+My default advice on how to optimize joins is:
+
+    Use a broadcast join if you can (see this notebook). From your question it seems your tables are large and a broadcast join is not an option.
+
+    Consider using a very large cluster (it's cheaper that you may think). $250 right now (6/2016) buys about 24 hours of 800 cores with 6Tb RAM and many SSDs on the EC2 spot instance market. When thinking about total cost of a big data solution, I find that humans tend to substantially undervalue their time.
+
+    Use the same partitioner. See this question for information on co-grouped joins.
+
+    If the data is huge and/or your clusters cannot grow such that even (3) above leads to OOM, use a two-pass approach. First, re-partition the data and persist using partitioned tables (dataframe.write.partitionBy()). Then, join sub-partitions serially in a loop, "appending" to the same final result table.
+
+Side note: I say "appending" above because in production I never use SaveMode.Append. It is not idempotent and that's a dangerous thing. I use SaveMode.Overwrite deep into the subtree of a partitioned table tree structure. Prior to 2.0.0 and 1.6.2 you'll have to delete _SUCCESS or metadata files or dynamic partition discovery will choke.
+
+from pyspark.sql.functions import *
+emp_df_1.withColumn("par_id",col('emp_id')%5).repartition(5, 'par_id').write.format('orc').partitionBy("par_id").saveAsTable("UDB.temptable_1")
+emp_df_2.withColumn("par_id",col('emp_id')%5).repartition(5, 'par_id').write.format('orc').partitionBy("par_id").saveAsTable("UDB.temptable_2")
+
+counter =0;
+paritioncount = 5;
+while counter<=paritioncount:
+    query1 ="SELECT * FROM UDB.temptable_1 where par_id={}".format(counter)
+    query2 ="SELECT * FROM UDB.temptable_2 where par_id={}".format(counter)
+    EMP_DF1 =spark.sql(query1)
+    EMP_DF2 =spark.sql(query2)
+    df1 = EMP_DF1.alias('df1')
+    df2 = EMP_DF2.alias('df2')
+    innerjoin_EMP = df1.join(df2, df1.emp_id == df2.emp_id,'inner').select('df1.*')
+    innerjoin_EMP.show()
+    innerjoin_EMP.write.format('orc').insertInto("UDB.temptable")
+    counter = counter +1
+	
+
+https://community.hortonworks.com/questions/63668/spark-broadcast-hash-join-failing-on-800-million-t.html
+https://stackoverflow.com/questions/32435263/dataframe-join-optimization-broadcast-hash-join
+
+
+
+Java coding with spark:
+https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
+
+http://letsprog.com/apache-spark-tutorial-java-maven-eclipse/
+
+
+
+https://www.allprogrammingtutorials.com/tutorials/getting-started-with-apache-spark-sql.php
+https://www.allprogrammingtutorials.com/tutorials/analysing-multiple-vertical-csv-files-using-spark-sql.php
+https://www.allprogrammingtutorials.com/tutorials/analysing-csv-file-using-spark-sql.php
+
+RDD to dataframes-with-java 
+
+https://riptutorial.com/apache-spark/example/22341/spark-dataframes-with-java
+
+http://timepasstechies.com/spark-converting-rdd-datasets-dataframe/
+http://timepasstechies.com/spark-dataset-api-examples-tutorial-20/
+
+
+https://code.i-harness.com/en/q/2036be8
+https://code.i-harness.com/en/q/1dcafd4
+https://code.i-harness.com/en/q/ddb52e *****
+
+https://stackoverflow.com/questions/44936394/how-to-write-a-user-defined-aggregate-function*******
+
+Intellij ID setup:
+https://hortonworks.com/tutorial/setting-up-a-spark-development-environment-with-java/
+
+Unit testing JAVA SPARK JOB :
+https://www.jofre.de/?p=1483
+
+MAP-REDUCE :
+https://github.com/eljefe6a/FinancialMapReduce
+https://github.com/eljefe6a/UnoExample
+https://github.com/eljefe6a/CardSecondarySort
+
+id:int;date:date;Temperature:float;Humidity:float;Light:float;CO2:float;HumidityRatio:float;Occupancy:int
+
+
+#############################################################################################################################
+
+
+
 kafka :
 http://codingjunkie.net/kafka-streams-purchase-transaction/***
 
